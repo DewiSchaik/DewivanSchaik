@@ -19,10 +19,16 @@ h1 {
   height: 150px;
   margin: 0;
 
-  font-family: "p22-nudgewink-pro", sans-serif;
-  font-size: 85px;
+  font-family: "macchia", sans-serif;
+  font-size: 700%;
   font-style: normal;
   color: #f3c8f3;
   background-color: #d15534;
   text-align: center;
+}
+
+p1 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 500%;
+  color: #fd9651;
 }
