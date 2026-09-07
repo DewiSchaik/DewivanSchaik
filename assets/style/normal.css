@@ -16,11 +16,11 @@ h1 {
   justify-content: center;
   align-items: center;
 
-  height: 150px;
+  height: 250px;
   margin: 0;
 
   font-family: "macchia", sans-serif;
-  font-size: 700%;
+  font-size: clamp(2.5rem, 8vw, 7rem);
   font-style: normal;
   color: #f3c8f3;
   background-color: #d15534;
@@ -29,6 +29,6 @@ h1 {
 
 p1 {
   font-family: "Staatliches", sans-serif;
-  font-size: 500%;
+  font-size: clamp(2.5rem, 8vw, 7rem);
   color: #fd9651;
 }
