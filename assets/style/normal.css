@@ -6,13 +6,14 @@
 
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: antiquewhite;
+  background-color: #fff8ee;
   color: CanvasText;
   color-scheme: light dark;
 }
 
 h1 {
-  color: rgb(255, 255, 255);
-  background-color: rgb(182, 163, 135);
+  font-family: fantasy;
+  color: #f3c8f3;
+  background-color: #d15534;
   text-align: center;
 }

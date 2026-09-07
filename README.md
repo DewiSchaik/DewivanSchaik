@@ -12,10 +12,9 @@ Dewischaik.nl ik heb dit gekoppeld door ip adressen en de domeinnaam in GitHub z
 
 Ik heb aanpassingen in html gemaakt maar het is nog niet gelukt om de aanpassingen te zien
 
-### 3 sept - [Workshop]
+![beschrijving]{link afbeelding}
 
-[...]
+checkout ma 7 sep
 
-### 31 aug - Kickoff
-
-Een fork van de model repository gemaakt en gepubliceerd via mijn eigen Github omgeving.
+1. een digital garden is een plek waar je aan werkt en nooit echt af is, er zijn verschillende opvattingen en visies van hoe je er naar kijkt/gebruikt.
+2. websites die webby zijn voldoen aan een aantal eissen,
