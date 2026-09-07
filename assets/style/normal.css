@@ -29,6 +29,6 @@ h1 {
 
 p1 {
   font-family: "Staatliches", sans-serif;
-  font-size: clamp(2.5rem, 8vw, 7rem);
+  font-size: clamp(1rem, 5vw, 6rem);
   color: #fd9651;
 }
