@@ -11,9 +11,13 @@ body {
   color-scheme: light dark;
 }
 
-h1 {
-  font-family: fantasy;
-  color: #f3c8f3;
-  background-color: #d15534;
-  text-align: center;
-}
+display: flex;
+justify-content: center;
+align-items: center;
+
+height: 150px;
+margin: 0;
+
+font-family: fantasy;
+color: #f3c8f3;
+background-color: #d15534;
