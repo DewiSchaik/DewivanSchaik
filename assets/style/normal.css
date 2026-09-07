@@ -13,9 +13,10 @@ body {
 
 h1 {
   font-family: "p22-nudgewink-pro", sans-serif;
-  font-weight: 700;
+  font-weight: 1500;
   font-style: normal;
   color: #f3c8f3;
   background-color: #d15534;
+  margin-top: 0cm;
   text-align: center;
 }
