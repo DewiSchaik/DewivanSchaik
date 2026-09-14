@@ -14,7 +14,7 @@ Ik heb aanpassingen in html gemaakt maar het is nog niet gelukt om de aanpassing
 
 ![beschrijving]{link afbeelding}
 
-checkout ma 7 sep
+### checkout ma 7 sep
 
 1. een digital garden is een plek waar je aan werkt en nooit echt af is, er zijn verschillende opvattingen en visies van hoe je er naar kijkt/gebruikt.
 2. websites die webby zijn voldoen aan een aantal eissen,
@@ -23,15 +23,17 @@ checkout ma 7 sep
    De essentie van mijn website is ikzelf en mijn interesses. Ik wilde niet kiezen voor één onderwerp, maar juist verschillende dingen die bij mij passen samenbrengen. Reizen, films en kleding laten allemaal iets zien van mijn persoonlijke smaak en waar ik inspiratie uit haal. De website wordt daardoor eigenlijk een soort digitaal persoonlijk platform.
 4. Welke woorden uit de kwaliteitenlijst passen bij je onderwerp?
    Woorden die goed bij mijn onderwerp passen zijn:
-   persoonlijk
-   creatief
-   inspirerend
-   speels
-   modern
-   vrolijk
-   dynamisch
-   vrij
-   stijlvol
+
+- persoonlijk
+- creatief
+- inspirerend
+  speels
+  modern
+  vrolijk
+  dynamisch
+  vrij
+  stijlvol
+
 5. Heeft ‘de ander’ een aanvulling op je onderwerp?
    Ja, de ander kan mijn onderwerp aanvullen door te kijken naar wat zij interessant vinden aan mijn website. Misschien vinden zij bijvoorbeeld vooral de reis- of filminspiratie leuk. Hierdoor kan ik ontdekken welke onderdelen het meest aanspreken en mijn website daarop aanpassen.
 6. Wat is het karakter, de uitstraling en het gevoel?
@@ -46,3 +48,10 @@ Ik wil mijn Digital Garden laten gaan over mijn persoonlijke interesses, zoals r
 en wil dat laten zien door foto's, inspiratiebeelden, korte teksten en mijn eigen meningen aan content te tonen.
 Ik begin met een stukje eigen content over mijn favoriete reisbestemmingen en fotospots.
 Als het begin is gemaakt kan ik mijn Garden verder uitbreiden door steeds nieuwe films, outfits, bestemmingen en andere dingen die mij inspireren toe te voegen.
+
+opdracht 16
+tips: meer fotos toevoegen, mijn layout veranderen zodat niet alles links staat. alles centreren
+
+opdracht 17
+
+![opdrachtweekly](assets/afbeeldingen/IMG_8941%202.jpeg)
