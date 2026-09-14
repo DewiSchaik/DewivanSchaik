@@ -27,7 +27,7 @@ h1 {
   text-align: center;
 }
 
-p1 {
+p {
   font-family: "Staatliches", sans-serif;
   font-size: clamp(1rem, 5vw, 6rem);
   color: #fd9651;
