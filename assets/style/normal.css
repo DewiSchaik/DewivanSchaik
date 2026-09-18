@@ -50,8 +50,17 @@ img {
   justify-self: center;
 }
 .films {
-  display: grid;
-  grid-template-columns: 4fr 4fr;
+  display: flex;
+  gap: 2vw;
+  overflow-x: auto;
+  padding: 2vw;
+}
+
+.films img {
+  width: 25vw;
+  height: 30vw;
+  object-fit: cover;
+  flex-shrink: 0;
 }
 /* TITELS */
 
