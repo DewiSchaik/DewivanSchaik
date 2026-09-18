@@ -86,3 +86,17 @@ h2 {
 p {
   font-size: clamp(1rem, 4vw, 1.2rem);
 }
+.reizen {
+  background-color: var(--koptekst);
+  padding: 5vw;
+  border-radius: 50% 50% 0 0;
+  min-height: 40vh;
+  text-align: center;
+}
+
+.wereldkaart {
+  width: 75vw;
+  max-width: none;
+  height: auto;
+  margin-top: 3vh;
+}
