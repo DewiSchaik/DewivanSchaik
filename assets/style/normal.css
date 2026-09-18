@@ -1,13 +1,22 @@
 html {
-  color-scheme: light dark;
+  color-scheme: light;
 
-  --achtergrond: light-dark(#fff8ee, #a69a89);
-  --kleur: light-dark(#000000, #fff8ee);
-  --koptekst: light-dark(#f3c8f3, #926e92);
-  --header: light-dark(#d15534, #813222);
-  --titels: light-dark(#fd9651, #813222);
+  --achtergrond: #fff8ee;
+  --kleur: #000000;
+  --koptekst: #f3c8f3;
+  --header: #d15534;
+  --titels: #fd9651;
 }
 
+html:has([value="dark"]:checked) {
+  color-scheme: dark;
+
+  --achtergrond: #a69a89;
+  --kleur: #fff8ee;
+  --koptekst: #926e92;
+  --header: #813222;
+  --titels: #813222;
+}
 body {
   margin: 0;
   background-color: var(--achtergrond);
@@ -15,16 +24,15 @@ body {
 }
 
 /* HEADER */
-
 header {
   display: flex;
+  flex-direction: column;
   height: 30vh;
   margin: 0;
   justify-content: center;
   align-items: center;
   background-color: var(--header);
 }
-
 h1 {
   font-family: "macchia", sans-serif;
   font-size: clamp(2.5rem, 8vw, 7rem);
