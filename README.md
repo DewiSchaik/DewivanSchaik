@@ -4,11 +4,31 @@ Het staat model voor digitale tuintjes welke bij 'Het web is voor iedereen' door
 
 ## Learning Log
 
-### [...]
+### checkout vr 18 sep
 
 Github is een platform waar je een start kan maken aan het ontwerpen van je eigen website zo koppel je het met code
 
 Dewischaik.nl ik heb dit gekoppeld door ip adressen en de domeinnaam in GitHub zetten
+Waarom geven de docenten deze opdracht?
+De docenten geven deze opdracht zodat ik HTML en CSS leer gebruiken en daardoor een betere digitale ontwerper word.
+Welke technieken gebruik ik?
+Ik gebruik vooral HTML en CSS. HTML gebruik ik voor de structuur en interactie, en CSS voor de vormgeving, layout en animaties.
+Wat zijn de randvoorwaarden?
+Ik moet rekening houden met mijn tijd, mijn kennis, toegankelijkheid, privacy en of mijn ontwerp echt als website werkt.
+Wat heb ik geleerd door mijn schetsen?
+Door verschillende schetsen te maken kon ik meerdere ideeën onderzoeken en beter zien hoe mijn website eruit kan komen te zien. Door te schetsen ontdek ik ook details die ik niet meteen in mijn hoofd zie.
+Wat wil ik nog onderzoeken?
+Ik wil vooral onderzoeken welke ideeën technisch haalbaar zijn met HTML en CSS en hoe ik mijn website interactief en adaptief kan maken.
+Hoe ga ik mijn ontwerp testen?
+Ik wil een werkend prototype maken met HTML en CSS. Daarna kan ik testen of bezoekers mijn website begrijpen en of de interacties werken.
+Waar moet ik tijdens het maken op letten?
+Ik moet regelmatig controleren of mijn website:
+HTML valide heeft
+toegankelijk is
+adaptief werkt op verschillende schermgroottes
+met light en dark mode werkt
+voldoet aan de wet en privacyregels
+nog steeds bij mijzelf en mijn ontwerp past.
 
 ### checkout wo 16 sep
 

@@ -1,65 +1,51 @@
 html {
   color-scheme: light dark;
 
-  --achtergrondkleur: light-dark(#fff8ee #988f82);
-  --color: light-dark(#000000 #ffffff);
+  --achtergrond: light-dark(#fff8ee, #a69a89);
+  --kleur: light-dark(#000000, #fff8ee);
+  --koptekst: light-dark(#f3c8f3, #926e92);
+  --header: light-dark(#d15534, #813222);
+  --titels: light-dark(#fd9651, #813222);
 }
+
 * {
   font-family: "Times New Roman", Times, serif;
   font-weight: 500;
   font-style: normal;
 }
 
-@media (prefers-color-scheme: light) {
-  body {
-    color: black;
-    background-color: white;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  body {
-    color: white;
-    background-color: black;
-  }
-}
-
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  /* background-color: var(--achtergrondkleur); */
-  color: CanvasText;
-  /* color-scheme: light dark; */
+  background-color: var(--achtergrond);
+  color: var(--kleur);
 }
 header {
   display: flex;
-  background-color: light-dark(#d15534 rgb(126, 52, 3));
   height: 250px;
   margin: 0;
   justify-content: center;
   align-items: center;
+  background-color: var(--header);
 }
+
 h1 {
   font-family: "macchia", sans-serif;
   font-size: clamp(2.5rem, 8vw, 7rem);
   font-style: normal;
-  color: #f3c8f3;
+  color: var(--koptekst);
 }
-h1 img {
-  width: 200px;
-  height: 200px;
+img {
+  width: 30%;
+  max-width: 300px;
+  height: auto;
 }
 h2 {
   font-family: "Staatliches", sans-serif;
   font-size: clamp(1rem, 5vw, 6rem);
-  color: #fd9651;
+  color: var(--titels);
 }
 
 p {
   font-size: clamp(0.2 rem, 2vw, 3rem);
-  color: var(--color);
-}
-ul {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1em;
+  color: var(--kleur);
 }
