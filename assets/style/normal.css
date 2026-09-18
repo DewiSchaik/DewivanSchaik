@@ -68,27 +68,21 @@ p {
   line-height: 1.5;
   color: var(--kleur);
 }
+.kronkel {
+  width: 120vw;
+  max-width: none;
+}
 
 /* 📱 MOBIEL */
+img {
+  width: 70%;
+  max-width: 300px;
+}
 
-@media (max-width: 600px) {
-  main {
-    grid-template-columns: 1fr;
-    gap: 3vw;
-    padding: 6vw;
-    text-align: center;
-  }
+h2 {
+  font-size: clamp(2rem, 10vw, 4rem);
+}
 
-  img {
-    width: 70%;
-    max-width: 300px;
-  }
-
-  h2 {
-    font-size: clamp(2rem, 10vw, 4rem);
-  }
-
-  p {
-    font-size: clamp(1rem, 4vw, 1.2rem);
-  }
+p {
+  font-size: clamp(1rem, 4vw, 1.2rem);
 }
