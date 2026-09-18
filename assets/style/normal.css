@@ -79,7 +79,7 @@ p {
   color: var(--kleur);
 }
 .kronkel {
-  width: 120vw;
+  width: 100vw;
   max-width: none;
 }
 
