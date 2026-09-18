@@ -59,6 +59,7 @@ h2 {
   font-family: "Staatliches", sans-serif;
   font-size: clamp(2rem, 5vw, 5rem);
   color: var(--titels);
+  text-align: center;
 }
 
 /* TEKST */
