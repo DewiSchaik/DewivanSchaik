@@ -1,32 +1,53 @@
+html {
+  color-scheme: light dark;
+
+  --achtergrondkleur: light-dark(#fff8ee #988f82);
+  --color: light-dark(#000000 #ffffff);
+}
 * {
   font-family: "Times New Roman", Times, serif;
   font-weight: 500;
   font-style: normal;
 }
 
-body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #fff8ee;
-  color: CanvasText;
-  color-scheme: light dark;
+@media (prefers-color-scheme: light) {
+  body {
+    color: black;
+    background-color: white;
+  }
 }
 
-h1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+@media (prefers-color-scheme: dark) {
+  body {
+    color: white;
+    background-color: black;
+  }
+}
 
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  /* background-color: var(--achtergrondkleur); */
+  color: CanvasText;
+  /* color-scheme: light dark; */
+}
+header {
+  display: flex;
+  background-color: light-dark(#d15534 rgb(126, 52, 3));
   height: 250px;
   margin: 0;
-
+  justify-content: center;
+  align-items: center;
+}
+h1 {
   font-family: "macchia", sans-serif;
   font-size: clamp(2.5rem, 8vw, 7rem);
   font-style: normal;
   color: #f3c8f3;
-  background-color: #d15534;
-  text-align: center;
 }
-
+h1 img {
+  width: 200px;
+  height: 200px;
+}
 h2 {
   font-family: "Staatliches", sans-serif;
   font-size: clamp(1rem, 5vw, 6rem);
@@ -35,4 +56,10 @@ h2 {
 
 p {
   font-size: clamp(0.2 rem, 2vw, 3rem);
+  color: var(--color);
+}
+ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
 }
