@@ -59,14 +59,17 @@ img {
   overflow-x: auto;
   padding: 2vw;
 }
-
 .films img {
   width: 25vw;
   height: 30vw;
   object-fit: cover;
   flex-shrink: 0;
+  transition: transform 0.3s ease;
 }
 
+.films img:hover {
+  transform: scale(1.08);
+}
 h2 {
   font-family: "Staatliches", sans-serif;
   font-size: clamp(3rem, 5vw, 5rem);
