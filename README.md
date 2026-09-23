@@ -32,17 +32,17 @@ nog steeds bij mijzelf en mijn ontwerp past.
 
 ### checkout wo 16 sep
 
-# 1. 3 principes
+1. 3 principes
 
 Balans: Elementen zijn goed verdeeld, zodat het ontwerp rustig en prettig oogt.
 Symmetrie: Elementen zijn aan beide kanten ongeveer gelijk verdeeld.
 Nabijheid: Elementen die bij elkaar horen, staan dicht bij elkaar.
 
-# 2. Grid
+2. Grid
 
 Een grid geeft structuur, maar je kunt binnen die structuur nog steeds spelen met de grootte en positie van elementen.
 
-# 3. Principe voor mijn Garden
+3. Principe voor mijn Garden
 
 Ik neem vooral balans mee. Ik wil verschillende afbeeldingen en teksten gebruiken, maar ze zo verdelen dat mijn website niet te druk of rommelig wordt.
 
@@ -50,17 +50,16 @@ Ik neem vooral balans mee. Ik wil verschillende afbeeldingen en teksten gebruike
 
 ### checkout ma 14 sep
 
-# Leg uit wanneer een website 'lelijk' wordt en geef voorbeelden wat je kan doen om deze 'lelijke' onderdelen te fixen?
+1. Leg uit wanneer een website 'lelijk' wordt en geef voorbeelden wat je kan doen om deze 'lelijke' onderdelen te fixen?
 
 als je alleen html pagina hebt geen css om het mooi te maken, je fixt het met flexbox, grid.
 
-# Vertel welke volgende stap je neemt om je website responsive te maken.
+2. Vertel welke volgende stap je neemt om je website responsive te maken.
 
 door flexbox en grid toe te passen
 
-# Kun je het ontwerp en de bouw van je eigen Garden (zo uit je hoofd) onderbouwen in Webby vocabulair?
-
-nee
+3. Kun je het ontwerp en de bouw van je eigen Garden (zo uit je hoofd) onderbouwen in Webby vocabulair?
+   Ik heb gekozen voor een persoonlijke, kleurrijke en expressieve stijl. Met balans, symmetrie en proximity houd ik de website overzichtelijk. Ik gebruik HTML en CSS, flexbox en grid om de website responsive en interactief te maken. Hover-effecten, klikbare elementen en animaties zorgen voor een dynamische en leuke gebruikerservaring.
 
 ### workshop ma 14 sep
 
