@@ -4,6 +4,10 @@ Het staat model voor digitale tuintjes welke bij 'Het web is voor iedereen' door
 
 ## Learning Log
 
+### zelf mee bezig in figma
+
+[→ Bekijk mijn Figma prototype](https://www.figma.com/proto/L98T9tQbsGSxDZJv4JnHM7/Untitled?node-id=0-1&t=rlDX8zHQZQj9krfK-1)
+
 ### checkout vr 18 sep
 
 Github is een platform waar je een start kan maken aan het ontwerpen van je eigen website zo koppel je het met code
