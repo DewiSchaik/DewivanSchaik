@@ -76,10 +76,14 @@ opdracht 17 - Hiba
 2. de tekst wordt kleiner maar nog in verhouding met de pagina en goed leesbaar
 3. UI design wordt minimaal gemaakt. minder tekst meer fotos
 
-### checkout ma 7 sep
+### checkout wo 9 sep
 
-1. een digital garden is een plek waar je aan werkt en nooit echt af is, er zijn verschillende opvattingen en visies van hoe je er naar kijkt/gebruikt.
-2. websites die webby zijn voldoen aan een aantal eissen,
+1. Waar werkt het Visual Research in 3 stappen naartoe?
+   Het Visual Research werkt toe naar een duidelijke visuele stijl voor mijn Digital Garden. Door verschillende voorbeelden, kleuren, vormen, typografie en interacties te onderzoeken, ontdek ik welke stijl het beste bij mij en mijn website past.
+   Waar gaat mijn Garden over?
+2. Mijn Garden gaat over mij en mijn interesses, zoals films, reizen, kleding en mijn vriendengroep. Ik gebruik hierbij vooral beeld en tekst, aangevuld met interactieve elementen zoals hover-effecten, klikbare afbeeldingen, animaties en een outfit builder.
+3. Welk idee van de Crazy 8 wil ik verder onderzoeken?
+   Ik wil vooral het idee van de outfit builder (schets 8) verder onderzoeken. Dit lijkt mij leuk omdat de gebruiker zelf kleding kan combineren en het daardoor interactief, dynamisch en persoonlijk wordt.
 
 ### workshop wo 9 sep
 
@@ -114,3 +118,13 @@ Ik wil mijn Digital Garden laten gaan over mijn persoonlijke interesses, zoals r
 en wil dat laten zien door foto's, inspiratiebeelden, korte teksten en mijn eigen meningen aan content te tonen.
 Ik begin met een stukje eigen content over mijn favoriete reisbestemmingen en fotospots.
 Als het begin is gemaakt kan ik mijn Garden verder uitbreiden door steeds nieuwe films, outfits, bestemmingen en andere dingen die mij inspireren toe te voegen.
+
+### checkout ma 7 sep
+
+1. een digital garden is een plek waar je aan werkt en nooit echt af is, er zijn verschillende opvattingen en visies van hoe je er naar kijkt/gebruikt.
+2. websites die webby zijn voldoen aan een aantal eissen,
+3. Ik wil aan de slag met een persoonlijke Digital Garden over mijzelf en mijn interesses. Ik wil hierin verschillende onderwerpen combineren, zoals films, reizen, kleding en mijn vriendengroep, waarbij ik vooral wil werken met kleurrijke beelden, tekst en interactieve elementen. Mijn eerste idee is om de website speels en persoonlijk te maken, zodat de gebruiker op verschillende manieren mijn interesses kan ontdekken.
+
+### opdracht 1 ma 7 sep
+
+![opdacht1](assets/afbeeldingen/7332d3d5-394e-4fe7-a8ac-4b9d363900bb.JPG)

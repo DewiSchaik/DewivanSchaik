@@ -6,6 +6,22 @@ html {
   --koptekst: #f3c8f3;
   --header: #d15534;
   --titels: #fd9651;
+  --geel: #fab940;
+
+  /* Witruimte */
+
+  --whitespace-s: 1rem;
+  --whitespace-m: calc(var(--whitespace-s) * 2);
+  --whitespace-l: calc(var(--whitespace-s) * 4);
+  --whitespace-xl: calc(var(--whitespace-s) * 6);
+  --whitespace-xs: calc(var(--whitespace-s) * 0.5);
+
+  /* Typografie */
+  --step-0: clamp(1rem, 0.9167rem + 0.3704vw, 1.25rem);
+  --step-1: clamp(1.2rem, 0.975rem + 1vw, 1.875rem);
+  --step-2: clamp(1.44rem, 0.9825rem + 2.0333vw, 2.8125rem);
+  --step-3: clamp(1.728rem, 0.8978rem + 3.69vw, 4.2188rem);
+  --step-4: clamp(2.0736rem, 0.6554rem + 6.303vw, 6.3281rem);
 }
 
 html:has([value="dark"]:checked) {
@@ -16,92 +32,136 @@ html:has([value="dark"]:checked) {
   --koptekst: #926e92;
   --header: #813222;
   --titels: #813222;
+  --geel: #b57f1b;
 }
+
+/* BASIS */
 body {
-  margin: 0;
+  margin: var(--whitespace-s);
+  margin-bottom: 0;
   background-color: var(--achtergrond);
   color: var(--kleur);
 }
+
+/* HEADER */
 
 header {
   display: flex;
   flex-direction: column;
   height: 30vh;
-  margin: 0;
   justify-content: center;
   align-items: center;
   background-color: var(--header);
-  padding: 12px 25px;
+
+  margin-left: -1rem;
 }
+
 h1 {
   font-family: "macchia", sans-serif;
-  font-size: clamp(2.5rem, 8vw, 7rem);
+  font-size: var(--step-4);
   font-style: normal;
   color: var(--koptekst);
   text-align: center;
+  margin-block: var(--whitespace-s);
 }
+
+/* ALGEMENE GRID */
 
 div {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
+  gap: var(--whitespace-m);
 }
 
+/* AFBEELDINGEN */
+
 img {
-  width: 100%;
+  width: 70%;
   max-width: 400px;
   height: auto;
   justify-self: center;
+  margin-block-start: var(--whitespace-m);
 }
+
+/* FILMS */
+
 .films {
   display: flex;
-  gap: 2vw;
+  gap: var(--whitespace-m);
   overflow-x: auto;
-  padding: 2vw;
+  padding: var(--whitespace-m);
 }
+
 .films img {
   width: 25vw;
   height: 30vw;
   object-fit: cover;
   flex-shrink: 0;
+  margin: 0;
   transition: transform 0.3s ease;
 }
 
 .films img:hover {
   transform: scale(1.08);
 }
+
+/* KOPPEN */
+
 h2 {
   font-family: "Staatliches", sans-serif;
-  font-size: clamp(3rem, 5vw, 5rem);
+  font-size: var(--step-3);
   color: var(--titels);
   text-align: center;
+  margin-block-start: var(--whitespace-l);
+  margin-block-end: var(--whitespace-s);
 }
 
+.films-link a {
+  display: inline-block;
+  padding: 10px 20px;
+
+  color: var(--titels);
+  text-decoration: none;
+
+  background-color: var(--koptekst);
+  border-radius: 10px;
+
+  box-shadow: 0 5px 0 var(--titels);
+}
+
+.films-link a:hover {
+  transform: translateY(3px);
+  box-shadow: 0 2px 0 var(--header);
+}
+h3 {
+  font-family: "Staatliches", sans-serif;
+
+  color: var(--header);
+}
+
+/* TEKST */
+
 p {
-  font-size: clamp(1rem, 2vw, 1.5rem);
+  font-size: var(--step-0);
   line-height: 1.5;
   color: var(--kleur);
+  margin-block: var(--whitespace-s);
 }
+
+/* KRONKEL */
+
 .kronkel {
   width: 100vw;
   max-width: none;
+  margin-left: -1rem;
 }
 
-img {
-  width: 70%;
-  max-width: 300px;
-}
+/* REIZEN */
 
-h2 {
-  font-size: clamp(1rem, 8vw, 6rem);
-}
-
-p {
-  font-size: clamp(1rem, 4vw, 1.2rem);
-}
 .reizen {
   background-color: var(--koptekst);
-  padding: 5vw;
+  padding: var(--whitespace-xl) var(--whitespace-m);
   border-radius: 50% 50% 0 0;
   min-height: 40vh;
   text-align: center;
@@ -111,17 +171,101 @@ p {
   width: 75vw;
   max-width: none;
   height: auto;
-  margin-top: 3vh;
+  margin-top: var(--whitespace-m);
 }
-.knop {
-  display: inline-block;
-  background-color: #d15534;
-  color: #f3c8f3;
-  padding: 12px 25px;
-  text-decoration: none;
-  border-radius: 10px;
+.filmtekst {
+  border: 10px solid var(--geel);
+
+  width: 80vw;
+  max-width: 800px;
+  min-height: 40vh;
+
+  margin: var(--whitespace-l) auto;
+
+  padding: var(--whitespace-m);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  box-sizing: border-box;
 }
 
-.knop:hover {
-  background-color: #fd9651;
+.filmtekst img {
+  width: 40%;
+  height: auto;
+}
+.genre-knoppen {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.genre-knoppen a {
+  display: inline-block;
+
+  padding: 0.8rem 1.5rem;
+
+  background-color: var(--koptekst);
+  color: var(--titels);
+
+  text-decoration: none;
+  border-radius: 10px;
+
+  box-shadow: 0 5px 0 var(--titels);
+
+  transition: 0.2s;
+}
+
+.genre-knoppen a:hover {
+  transform: translateY(4px);
+  box-shadow: 0 1px 0 var(--header);
+}
+.stoelen {
+  display: block;
+  width: 100vw;
+  max-width: none;
+  height: auto;
+  margin-top: -39rem;
+
+  pointer-events: none;
+}
+
+@media (max-width: 600px) {
+  .stoelen {
+    width: 100vw;
+    margin-top: -5rem;
+  }
+}
+.hauntingoffhillhouse {
+  max-width: 400px;
+  min-height: 10vh;
+}
+.film-detail {
+  border: 10px solid var(--geel);
+
+  width: 80%;
+  max-width: 800px;
+  min-height: 40vh;
+
+  margin: 5rem auto;
+  padding: 2rem;
+
+  display: grid;
+  grid-template-columns: 40% 45%;
+  gap: 3rem;
+
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.hauntingoffhillhouse {
+  width: 100%;
+  height: auto;
+}
+
+.film-info {
+  text-align: left;
 }
