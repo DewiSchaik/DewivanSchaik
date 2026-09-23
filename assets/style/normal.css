@@ -147,7 +147,27 @@ img {
 .films img:hover {
   transform: scale(1.08);
 }
+nav {
+  position: absolute;
+  top: var(--whitespace-s);
+  left: var(--whitespace-s);
 
+  display: flex;
+  gap: var(--whitespace-s);
+}
+
+nav a {
+  color: var(--kleur);
+  background-color: var(--koptekst);
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: var(--titels);
+  color: var(--achtergrond);
+}
 /* KOPPEN */
 
 h2 {
@@ -242,7 +262,9 @@ textarea {
   width: 40%;
   height: auto;
 }
-
+.filmtekst h2 {
+  margin-top: -2rem;
+}
 /* GENRE KNOPPEN */
 
 .genre-knoppen {
