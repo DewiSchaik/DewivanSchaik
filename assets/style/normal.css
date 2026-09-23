@@ -60,17 +60,37 @@ p {
 }
 
 /* HEADER */
-
 header {
+  position: relative;
   display: flex;
   flex-direction: column;
   height: 30vh;
   justify-content: center;
   align-items: center;
   background-color: var(--header);
-  margin-left: -1rem;
 }
 
+header nav {
+  position: absolute;
+  top: var(--whitespace-m);
+  left: var(--whitespace-m);
+
+  display: flex;
+  gap: var(--whitespace-s);
+}
+
+header nav a {
+  color: var(--kleur);
+  text-decoration: none;
+  background-color: var(--koptekst);
+  padding: 0.5em 1em;
+  border-radius: 10px;
+}
+
+header nav a:hover {
+  background-color: var(--titels);
+  color: var(--achtergrond);
+}
 h1 {
   font-family: "macchia", sans-serif;
   font-size: var(--step-4);
