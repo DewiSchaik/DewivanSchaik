@@ -125,6 +125,30 @@ Als het begin is gemaakt kan ik mijn Garden verder uitbreiden door steeds nieuwe
 2. websites die webby zijn voldoen aan een aantal eissen,
 3. Ik wil aan de slag met een persoonlijke Digital Garden over mijzelf en mijn interesses. Ik wil hierin verschillende onderwerpen combineren, zoals films, reizen, kleding en mijn vriendengroep, waarbij ik vooral wil werken met kleurrijke beelden, tekst en interactieve elementen. Mijn eerste idee is om de website speels en persoonlijk te maken, zodat de gebruiker op verschillende manieren mijn interesses kan ontdekken.
 
+### opdracht 3 ma 7 sep
+
+staat in oefeningen
+
+### opdracht 2 ma 7 sep
+
+Vanuit de inventarisatie: wat wil ik zelf maken?
+
+- Ik wil een persoonlijke en kleurrijke Digital Garden maken waarin verschillende interesses van mij samenkomen. Ik wil vooral dingen gebruiken die ik nog niet zo goed kan, zoals meer interactieve animaties, hover-effecten en een outfit builder, omdat ik hiermee de website interessanter en dynamischer kan maken.
+  Welke webby dingen wil ik gebruiken?
+- Ik wil onder andere gebruikmaken van:
+  Hover-effecten bij afbeeldingen en knoppen.
+  Klikbare afbeeldingen die naar andere pagina's leiden.
+  Animaties en beweging tijdens het scrollen.
+  Een interactieve wereldkaart.
+  Een filmstrip waar je door films kunt bladeren.
+  Een outfit builder waarbij je verschillende kledingstukken kunt combineren.
+  Welke eigen content ga ik maken?
+  Mijn content gaat vooral over mijzelf en mijn interesses, zoals films, reizen, kleding en mijn vriendengroep. De toon wordt persoonlijk, vrolijk en spontaan, zodat de website echt als mijn eigen plek voelt. Ik wil bijvoorbeeld mijn eigen filmratings en meningen schrijven, mijn favoriete reisplekken en fotospots delen en vertellen waarom bepaalde dingen mij aanspreken.
+  Gebruik ik content van anderen?
+- Ik kan afbeeldingen gebruiken als inspiratie of als onderdeel van mijn onderzoek, maar ik wil zoveel mogelijk eigen foto's, illustraties en teksten gebruiken. Als ik materiaal van anderen gebruik, moet ik kijken of ik daar toestemming voor heb of dat het materiaal vrij gebruikt mag worden; bij bijvoorbeeld films kan ik informatie en afbeeldingen gebruiken als onderdeel van mijn onderwerp, maar ik moet rekening houden met auteursrecht. Door mijn eigen mening, ervaringen, foto's en vormgeving toe te voegen, wordt het verhaal persoonlijker en meer mijn eigen content.
+  Op welke manier is de content te ervaren?
+- Ik wil dat mijn Garden niet alleen bestaat uit tekst en afbeeldingen, maar dat de gebruiker er doorheen kan ontdekken en spelen. Door te klikken, te hoveren, te scrollen en bijvoorbeeld zelf outfits samen te stellen, wordt de website interactief; met animaties, kleuren, foto's en eventueel geluid wil ik er ook een bepaalde sfeer en beleving aan geven.
+
 ### opdracht 1 ma 7 sep
 
 ![opdacht1](assets/afbeeldingen/7332d3d5-394e-4fe7-a8ac-4b9d363900bb.JPG)
