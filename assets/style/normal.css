@@ -1,6 +1,7 @@
 html {
   color-scheme: light;
 
+  /* KLEUREN */
   --achtergrond: #fff8ee;
   --kleur: #000000;
   --koptekst: #f3c8f3;
@@ -8,15 +9,14 @@ html {
   --titels: #fd9651;
   --geel: #fab940;
 
-  /* Witruimte */
-
+  /* WITRUIMTE */
+  --whitespace-xs: calc(var(--whitespace-s) * 0.5);
   --whitespace-s: 1rem;
   --whitespace-m: calc(var(--whitespace-s) * 2);
   --whitespace-l: calc(var(--whitespace-s) * 4);
   --whitespace-xl: calc(var(--whitespace-s) * 6);
-  --whitespace-xs: calc(var(--whitespace-s) * 0.5);
 
-  /* Typografie */
+  /* TYPOGRAFIE */
   --step-0: clamp(1rem, 0.9167rem + 0.3704vw, 1.25rem);
   --step-1: clamp(1.2rem, 0.975rem + 1vw, 1.875rem);
   --step-2: clamp(1.44rem, 0.9825rem + 2.0333vw, 2.8125rem);
@@ -36,11 +36,27 @@ html:has([value="dark"]:checked) {
 }
 
 /* BASIS */
+
 body {
   margin: var(--whitespace-s);
   margin-bottom: 0;
   background-color: var(--achtergrond);
   color: var(--kleur);
+  font-family: ui-sans-serif, sans-serif;
+}
+
+/* TEKST */
+
+p {
+  font-size: var(--step-0);
+  line-height: 1.5;
+  color: var(--kleur);
+
+  /* leesbare regellengte */
+  max-width: 30em;
+
+  margin-block: var(--whitespace-s);
+  margin-inline: auto;
 }
 
 /* HEADER */
@@ -52,7 +68,6 @@ header {
   justify-content: center;
   align-items: center;
   background-color: var(--header);
-
   margin-left: -1rem;
 }
 
@@ -76,10 +91,17 @@ div {
 
 /* AFBEELDINGEN */
 
+img,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 img {
   width: 70%;
   max-width: 400px;
-  height: auto;
   justify-self: center;
   margin-block-start: var(--whitespace-m);
 }
@@ -117,16 +139,20 @@ h2 {
   margin-block-end: var(--whitespace-s);
 }
 
+h3 {
+  font-family: "Staatliches", sans-serif;
+  color: var(--header);
+}
+
+/* FILM LINK */
+
 .films-link a {
   display: inline-block;
   padding: 10px 20px;
-
   color: var(--titels);
   text-decoration: none;
-
   background-color: var(--koptekst);
   border-radius: 10px;
-
   box-shadow: 0 5px 0 var(--titels);
 }
 
@@ -134,19 +160,19 @@ h2 {
   transform: translateY(3px);
   box-shadow: 0 2px 0 var(--header);
 }
-h3 {
-  font-family: "Staatliches", sans-serif;
 
-  color: var(--header);
+/* KNOPPEN */
+
+button,
+summary {
+  cursor: pointer;
 }
 
-/* TEKST */
-
-p {
-  font-size: var(--step-0);
-  line-height: 1.5;
-  color: var(--kleur);
-  margin-block: var(--whitespace-s);
+button,
+input,
+select,
+textarea {
+  font: inherit;
 }
 
 /* KRONKEL */
@@ -173,15 +199,15 @@ p {
   height: auto;
   margin-top: var(--whitespace-m);
 }
+
+/* FILMTEKST */
+
 .filmtekst {
   border: 10px solid var(--geel);
-
   width: 80vw;
   max-width: 800px;
   min-height: 40vh;
-
   margin: var(--whitespace-l) auto;
-
   padding: var(--whitespace-m);
 
   display: flex;
@@ -196,26 +222,24 @@ p {
   width: 40%;
   height: auto;
 }
+
+/* GENRE KNOPPEN */
+
 .genre-knoppen {
   display: flex;
   justify-content: center;
-  gap: 2rem;
+  gap: var(--whitespace-m);
   flex-wrap: wrap;
 }
 
 .genre-knoppen a {
   display: inline-block;
-
   padding: 0.8rem 1.5rem;
-
   background-color: var(--koptekst);
-  color: var(--titels);
-
+  color: var(--header);
   text-decoration: none;
   border-radius: 10px;
-
   box-shadow: 0 5px 0 var(--titels);
-
   transition: 0.2s;
 }
 
@@ -223,49 +247,72 @@ p {
   transform: translateY(4px);
   box-shadow: 0 1px 0 var(--header);
 }
+
+/* STOELEN */
+
 .stoelen {
   display: block;
   width: 100vw;
   max-width: none;
   height: auto;
   margin-top: -39rem;
-
   pointer-events: none;
 }
 
-@media (max-width: 600px) {
-  .stoelen {
-    width: 100vw;
-    margin-top: -5rem;
-  }
-}
+/* HAUNTING OF HILL HOUSE */
+
 .hauntingoffhillhouse {
   max-width: 400px;
   min-height: 10vh;
-}
-.film-detail {
-  border: 10px solid var(--geel);
-
-  width: 80%;
-  max-width: 800px;
-  min-height: 40vh;
-
-  margin: 5rem auto;
-  padding: 2rem;
-
-  display: grid;
-  grid-template-columns: 40% 45%;
-  gap: 3rem;
-
-  align-items: center;
-  box-sizing: border-box;
-}
-
-.hauntingoffhillhouse {
   width: 100%;
   height: auto;
 }
 
+/* FILM DETAIL */
+
+.film-detail {
+  border: 10px solid var(--geel);
+  width: 80%;
+  max-width: 800px;
+  min-height: 40vh;
+  margin: var(--whitespace-xl) auto;
+  padding: var(--whitespace-m);
+
+  display: grid;
+  grid-template-columns: 40% 45%;
+  gap: var(--whitespace-l);
+  align-items: center;
+
+  box-sizing: border-box;
+}
+
 .film-info {
   text-align: left;
+}
+
+/* MOBIEL */
+
+@media (max-width: 600px) {
+  .film-detail {
+    width: 90%;
+    grid-template-columns: 1fr;
+    gap: var(--whitespace-m);
+    padding: var(--whitespace-m);
+  }
+
+  .film-detail img {
+    width: 70%;
+    max-width: 300px;
+    margin: auto;
+  }
+
+  .film-info {
+    width: 100%;
+    text-align: center;
+  }
+
+  .film-info p {
+    font-size: var(--step-0);
+    max-width: 30em;
+  }
 }
