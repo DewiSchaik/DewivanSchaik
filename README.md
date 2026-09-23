@@ -87,6 +87,8 @@ opdracht 17 - Hiba
 
 ### workshop wo 9 sep
 
+opdracht 5-10
+[Mijn Miro-board](https://miro.com/app/board/uXjVHq1zApo=/?moveToWidget=3458764682999666404&cot=14)
 opdracht 4
 
 1. Wat is voor jou de essentie van wat je hebt gepresenteerd?
