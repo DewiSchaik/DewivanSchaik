@@ -251,14 +251,15 @@ textarea {
 /* STOELEN */
 
 .stoelen {
-  display: block;
+  position: fixed;
+  bottom: -150px;
+  left: 0;
   width: 100vw;
   max-width: none;
   height: auto;
-  margin-top: -39rem;
+  z-index: 10;
   pointer-events: none;
 }
-
 /* HAUNTING OF HILL HOUSE */
 
 .hauntingoffhillhouse {
@@ -312,7 +313,7 @@ textarea {
   }
 
   .film-info p {
-    font-size: var(--step-0);
     max-width: 30em;
+    font-weight: normal;
   }
 }
