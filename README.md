@@ -30,6 +30,10 @@ met light en dark mode werkt
 voldoet aan de wet en privacyregels
 nog steeds bij mijzelf en mijn ontwerp past.
 
+### retrospect vr 18 sep
+
+moet nog komen!
+
 ### checkout wo 16 sep
 
 1. 3 principes
@@ -75,6 +79,21 @@ opdracht 17 - Hiba
 2. de tekst wordt kleiner maar nog in verhouding met de pagina en goed leesbaar
 3. UI design wordt minimaal gemaakt. minder tekst meer fotos
 
+### workshop vr 11 sep
+
+opdracht 14
+Inhoud van mijn pagina
+Mijn pagina bevat titels, teksten, afbeeldingen en links over mijzelf en mijn interesses, zoals films, reizen, kleding en mijn vriendengroep. De afbeeldingen zijn vooral eigen foto's of beelden die de onderwerpen ondersteunen.
+Vormgeving van mijn pagina
+Ik gebruik een kleurrijke en persoonlijke stijl met verschillende kleuren, afbeeldingen en vormen. Ik gebruik custom properties en light/dark-mode om de kleuren aan te passen en zorg met responsive CSS dat de vormgeving op verschillende schermformaten goed werkt.
+
+opdracht 12-13
+ik was er deze les niet maar dit zijn mijn 5 schetsen:
+
+### checkout vr 11 sep
+
+ik heb geen feedback gehad want ik was er niet
+
 ### checkout wo 9 sep
 
 1. Waar werkt het Visual Research in 3 stappen naartoe?
@@ -88,6 +107,7 @@ opdracht 17 - Hiba
 
 opdracht 5-10
 [Mijn Miro-board](https://miro.com/app/board/uXjVHq1zApo=/?moveToWidget=3458764682999666404&cot=14)
+
 opdracht 4
 
 1. Wat is voor jou de essentie van wat je hebt gepresenteerd?
