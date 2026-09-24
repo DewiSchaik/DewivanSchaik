@@ -80,7 +80,7 @@ header nav {
 }
 
 header nav a {
-  color: var(--kleur);
+  color: var(--header);
   text-decoration: none;
   background-color: var(--koptekst);
   padding: 0.5em 1em;
@@ -92,7 +92,7 @@ header nav a:hover {
   color: var(--achtergrond);
 }
 h1 {
-  font-family: "macchia", sans-serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-size: var(--step-4);
   font-style: normal;
   color: var(--koptekst);
@@ -157,7 +157,7 @@ nav {
 }
 
 nav a {
-  color: var(--kleur);
+  color: var(--header);
   background-color: var(--koptekst);
   padding: 0.5em 1em;
   border-radius: 10px;
@@ -294,7 +294,7 @@ textarea {
 
 .stoelen {
   position: fixed;
-  bottom: -170px;
+  bottom: -30px;
   left: 0;
   width: 100vw;
   max-width: none;
@@ -358,4 +358,181 @@ textarea {
     max-width: 30em;
     font-weight: normal;
   }
+}
+.reizen-pagina {
+  background-color: var(--koptekst);
+}
+.reizen-pagina main {
+  position: relative;
+}
+.reizen-knoppen {
+  background-color: var(--koptekst);
+}
+
+.h1kleur {
+  color: var(--header);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+.reizen-pagina main {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+}
+
+.reizen-pagina main {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+}
+
+.reizen-pagina main {
+  position: relative;
+  width: 100%;
+  height: 70vh;
+}
+
+/* checkbox onzichtbaar */
+#envelop-open {
+  display: none;
+}
+
+/* Alle enveloppen hebben hetzelfde middelpunt */
+.eerste-envelop,
+.envelop-achter,
+.envelop-voor {
+  position: absolute;
+  width: min(1000px, 90vw);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Dichte envelop */
+.eerste-envelop {
+  z-index: 3;
+}
+
+/* Open envelop - eerst onzichtbaar */
+.envelop-achter {
+  z-index: 1;
+  opacity: 0;
+}
+
+.envelop-voor {
+  z-index: 2;
+  opacity: 0;
+  top: 464px;
+}
+
+/* Zegel */
+.zegel {
+  position: absolute;
+  width: 120px;
+  left: 50%;
+  top: 59%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  cursor: pointer;
+}
+
+/* Zegelafbeelding */
+.zegel img {
+  width: 100%;
+  margin: 0;
+  transition: transform 0.2s ease;
+}
+
+/* Hover */
+.zegel:hover img {
+  transform: scale(1.1);
+}
+
+/* NA KLIK */
+#envelop-open:checked ~ .eerste-envelop {
+  opacity: 0;
+}
+
+#envelop-open:checked ~ .zegel {
+  opacity: 0;
+  pointer-events: none;
+}
+
+#envelop-open:checked ~ .envelop-achter {
+  opacity: 1;
+}
+
+#envelop-open:checked ~ .envelop-voor {
+  opacity: 1;
+}
+.eerste-envelop,
+.envelop-achter,
+.envelop-voor {
+  width: min(600px, 90vw);
+  max-width: none;
+}
+/* KAARTJES */
+
+.kaartjes {
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  pointer-events: none;
+}
+
+.kaartjes img {
+  position: absolute;
+  width: 180px;
+  max-width: none;
+  left: 50%;
+  top: 50%;
+  margin: 0;
+  opacity: 0;
+
+  transform: translate(-50%, 100px) rotate(0deg);
+
+  transition:
+    transform 0.8s ease,
+    opacity 0.4s ease;
+}
+/* KAARTJES KOMEN UIT DE ENVELOP */
+
+#envelop-open:checked ~ .kaartjes img:nth-child(1) {
+  opacity: 1;
+  transform: translate(-400px, -100px) rotate(-18deg);
+  transition-delay: 0.1s;
+}
+
+#envelop-open:checked ~ .kaartjes img:nth-child(2) {
+  opacity: 1;
+  transform: translate(-290px, -200px) rotate(-8deg);
+  transition-delay: 0.2s;
+}
+
+#envelop-open:checked ~ .kaartjes img:nth-child(3) {
+  opacity: 1;
+  transform: translate(-150px, -300px) rotate(2deg);
+  transition-delay: 0.3s;
+}
+
+#envelop-open:checked ~ .kaartjes img:nth-child(4) {
+  opacity: 1;
+  transform: translate(50px, -320px) rotate(8deg);
+  transition-delay: 0.4s;
+}
+
+#envelop-open:checked ~ .kaartjes img:nth-child(5) {
+  opacity: 1;
+  transform: translate(150px, -250px) rotate(15deg);
+  transition-delay: 0.5s;
+}
+
+#envelop-open:checked ~ .kaartjes img:nth-child(6) {
+  opacity: 1;
+  transform: translate(230px, -160px) rotate(22deg);
+  transition-delay: 0.6s;
+}
+.kaartjes img:nth-child(1),
+.kaartjes img:nth-child(2),
+.kaartjes img:nth-child(3) {
+  width: 290px;
 }
