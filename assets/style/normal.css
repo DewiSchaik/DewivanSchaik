@@ -24,6 +24,8 @@ html {
   --step-4: clamp(2.0736rem, 0.6554rem + 6.303vw, 6.3281rem);
 }
 
+/* DARK MODE */
+
 html:has([value="dark"]:checked) {
   color-scheme: dark;
 
@@ -51,29 +53,45 @@ p {
   font-size: var(--step-0);
   line-height: 1.5;
   color: var(--kleur);
-
-  /* leesbare regellengte */
   max-width: 30em;
-
   margin-block: var(--whitespace-s);
   margin-inline: auto;
 }
 
 /* HEADER */
+
 header {
   position: relative;
-  display: flex;
-  flex-direction: column;
-  height: 30vh;
-  justify-content: center;
-  align-items: center;
+  min-height: 15vh;
+  padding: var(--whitespace-m);
+
   background-color: var(--header);
+
+  display: flex;
+  align-items: center;
 }
+
+/* TITEL LINKS */
+
+header h1 {
+  margin: 0;
+
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: var(--step-3);
+  color: var(--koptekst);
+
+  text-align: left;
+}
+
+/* NAVIGATIE RECHTS IN HET MIDDEN */
 
 header nav {
   position: absolute;
-  top: var(--whitespace-m);
-  left: var(--whitespace-m);
+
+  right: 2%;
+  top: 50%;
+
+  transform: translateY(-50%);
 
   display: flex;
   gap: var(--whitespace-s);
@@ -81,26 +99,67 @@ header nav {
 
 header nav a {
   color: var(--header);
-  text-decoration: none;
   background-color: var(--koptekst);
+
   padding: 0.5em 1em;
   border-radius: 10px;
+
+  text-decoration: none;
 }
 
 header nav a:hover {
   background-color: var(--titels);
   color: var(--achtergrond);
 }
-h1 {
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  font-size: var(--step-4);
-  font-style: normal;
+
+/* ZON EN MAAN RECHTSBOVEN */
+
+header form {
+  position: absolute;
+
+  right: var(--whitespace-m);
+  top: var(--whitespace-s);
+
+  display: flex;
+  gap: 0.5rem;
+}
+
+header form label {
+  cursor: pointer;
+
+  font-size: 1.5rem;
+
+  display: inline-block;
+
+  transition: transform 0.2s ease;
+}
+
+header form label:hover {
+  transform: scale(1.25);
+}
+
+header form input {
+  display: none;
+}
+
+/* HAMBURGERMENU */
+
+#menu-toggle {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
   color: var(--koptekst);
-  text-align: center;
-  margin-block: var(--whitespace-s);
 }
 
 /* ALGEMENE GRID */
+
+main {
+  margin-top: -11rem;
+}
 
 div {
   display: grid;
@@ -111,19 +170,30 @@ div {
 
 /* AFBEELDINGEN */
 
-img,
-svg,
-video {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
 img {
   width: 70%;
   max-width: 400px;
   justify-self: center;
   margin-block-start: var(--whitespace-m);
+}
+.kronkel {
+  width: 100vw;
+  max-width: none;
+  margin-top: -5rem;
+
+  position: relative;
+}
+
+@media (max-width: 600px) {
+  main {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .kronkel {
+    margin-top: -1rem;
+  }
 }
 
 /* FILMS */
@@ -138,43 +208,28 @@ img {
 .films img {
   width: 25vw;
   height: 30vw;
+
   object-fit: cover;
   flex-shrink: 0;
+
   margin: 0;
+
   transition: transform 0.3s ease;
 }
 
 .films img:hover {
   transform: scale(1.08);
 }
-nav {
-  position: absolute;
-  top: var(--whitespace-s);
-  left: var(--whitespace-s);
 
-  display: flex;
-  gap: var(--whitespace-s);
-}
-
-nav a {
-  color: var(--header);
-  background-color: var(--koptekst);
-  padding: 0.5em 1em;
-  border-radius: 10px;
-  text-decoration: none;
-}
-
-nav a:hover {
-  background-color: var(--titels);
-  color: var(--achtergrond);
-}
 /* KOPPEN */
 
 h2 {
   font-family: "Staatliches", sans-serif;
   font-size: var(--step-3);
   color: var(--titels);
+
   text-align: center;
+
   margin-block-start: var(--whitespace-l);
   margin-block-end: var(--whitespace-s);
 }
@@ -188,11 +243,15 @@ h3 {
 
 .films-link a {
   display: inline-block;
+
   padding: 10px 20px;
+
   color: var(--titels);
   text-decoration: none;
+
   background-color: var(--koptekst);
   border-radius: 10px;
+
   box-shadow: 0 5px 0 var(--titels);
 }
 
@@ -215,21 +274,17 @@ textarea {
   font: inherit;
 }
 
-/* KRONKEL */
-
-.kronkel {
-  width: 100vw;
-  max-width: none;
-  margin-left: -1rem;
-}
-
 /* REIZEN */
 
 .reizen {
   background-color: var(--koptekst);
+
   padding: var(--whitespace-xl) var(--whitespace-m);
+
   border-radius: 50% 50% 0 0;
+
   min-height: 40vh;
+
   text-align: center;
 }
 
@@ -237,16 +292,82 @@ textarea {
   width: 75vw;
   max-width: none;
   height: auto;
+
   margin-top: var(--whitespace-m);
 }
 
-/* FILMTEKST */
+/* films.html */
+.films-header {
+  position: relative;
+  min-height: 15vh;
+  padding: var(--whitespace-m);
+  background-color: var(--achtergrond);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.films-header h1 {
+  margin: 0;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: var(--step-4);
+  color: var(--koptekst);
+  text-align: center;
+}
+.film-header nav {
+  right: 2%;
+}
+.knoppenreizen {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: var(--whitespace-s);
+  width: 100%;
+  box-sizing: border-box;
+  padding: var(--whitespace-m);
+}
+
+.knoppenreizen a {
+  color: var(--header);
+  background-color: var(--koptekst);
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+.knoppenreizen a:hover {
+  background-color: var(--titels);
+  color: var(--achtergrond);
+  transform: translateY(-3px);
+}
+article nav {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: var(--whitespace-m);
+}
+
+article nav a {
+  color: var(--header);
+  background-color: var(--koptekst);
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+article nav a:hover {
+  background-color: var(--titels);
+  color: var(--achtergrond);
+  transform: translateY(-3px);
+}
 .filmtekst {
   border: 10px solid var(--geel);
+
   width: 80vw;
   max-width: 800px;
   min-height: 40vh;
+
   margin: var(--whitespace-l) auto;
   padding: var(--whitespace-m);
 
@@ -262,11 +383,12 @@ textarea {
   width: 40%;
   height: auto;
 }
+
 .filmtekst h2 {
   margin-top: -2rem;
 }
-/* GENRE KNOPPEN */
 
+/* GENRE KNOPPEN */
 .genre-knoppen {
   display: flex;
   justify-content: center;
@@ -276,12 +398,18 @@ textarea {
 
 .genre-knoppen a {
   display: inline-block;
+
   padding: 0.8rem 1.5rem;
+
   background-color: var(--koptekst);
   color: var(--header);
+
   text-decoration: none;
+
   border-radius: 10px;
+
   box-shadow: 0 5px 0 var(--titels);
+
   transition: 0.2s;
 }
 
@@ -294,19 +422,25 @@ textarea {
 
 .stoelen {
   position: fixed;
+
   bottom: -30px;
   left: 0;
+
   width: 100vw;
   max-width: none;
   height: auto;
+
   z-index: 10;
+
   pointer-events: none;
 }
+
 /* HAUNTING OF HILL HOUSE */
 
 .hauntingoffhillhouse {
   max-width: 400px;
   min-height: 10vh;
+
   width: 100%;
   height: auto;
 }
@@ -315,15 +449,19 @@ textarea {
 
 .film-detail {
   border: 10px solid var(--geel);
+
   width: 80%;
   max-width: 800px;
   min-height: 40vh;
+
   margin: var(--whitespace-xl) auto;
   padding: var(--whitespace-m);
 
   display: grid;
   grid-template-columns: 40% 45%;
+
   gap: var(--whitespace-l);
+
   align-items: center;
 
   box-sizing: border-box;
@@ -333,51 +471,11 @@ textarea {
   text-align: left;
 }
 
-/* MOBIEL */
+/* REIZEN PAGINA */
 
-@media (max-width: 600px) {
-  .film-detail {
-    width: 90%;
-    grid-template-columns: 1fr;
-    gap: var(--whitespace-m);
-    padding: var(--whitespace-m);
-  }
-
-  .film-detail img {
-    width: 70%;
-    max-width: 300px;
-    margin: auto;
-  }
-
-  .film-info {
-    width: 100%;
-    text-align: center;
-  }
-
-  .film-info p {
-    max-width: 30em;
-    font-weight: normal;
-  }
-}
 .reizen-pagina {
   background-color: var(--koptekst);
 }
-.reizen-pagina main {
-  position: relative;
-}
-.reizen-knoppen {
-  background-color: var(--koptekst);
-}
-
-.h1kleur {
-  color: var(--header);
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-}
-.reizen-pagina main {
-  position: relative;
-  width: 100%;
-  height: 70vh;
-}
 
 .reizen-pagina main {
   position: relative;
@@ -385,34 +483,31 @@ textarea {
   height: 70vh;
 }
 
-.reizen-pagina main {
-  position: relative;
-  width: 100%;
-  height: 70vh;
-}
+/* ENVELOP */
 
-/* checkbox onzichtbaar */
 #envelop-open {
   display: none;
 }
 
-/* Alle enveloppen hebben hetzelfde middelpunt */
 .eerste-envelop,
 .envelop-achter,
 .envelop-voor {
   position: absolute;
-  width: min(1000px, 90vw);
+
+  width: min(600px, 90vw);
+
   left: 50%;
   top: 50%;
+
   transform: translate(-50%, -50%);
+
+  max-width: none;
 }
 
-/* Dichte envelop */
 .eerste-envelop {
   z-index: 3;
 }
 
-/* Open envelop - eerst onzichtbaar */
 .envelop-achter {
   z-index: 1;
   opacity: 0;
@@ -424,30 +519,36 @@ textarea {
   top: 464px;
 }
 
-/* Zegel */
+/* ZEGEL */
+
 .zegel {
   position: absolute;
+
   width: 120px;
+
   left: 50%;
   top: 59%;
+
   transform: translate(-50%, -50%);
+
   z-index: 10;
+
   cursor: pointer;
 }
 
-/* Zegelafbeelding */
 .zegel img {
   width: 100%;
   margin: 0;
+
   transition: transform 0.2s ease;
 }
 
-/* Hover */
 .zegel:hover img {
   transform: scale(1.1);
 }
 
-/* NA KLIK */
+/* ENVELOP OPENEN */
+
 #envelop-open:checked ~ .eerste-envelop {
   opacity: 0;
 }
@@ -464,28 +565,32 @@ textarea {
 #envelop-open:checked ~ .envelop-voor {
   opacity: 1;
 }
-.eerste-envelop,
-.envelop-achter,
-.envelop-voor {
-  width: min(600px, 90vw);
-  max-width: none;
-}
+
 /* KAARTJES */
 
-.kaartjes {
+.kaartjes a {
   position: absolute;
-  inset: 0;
-  z-index: 4;
-  pointer-events: none;
-}
 
-.kaartjes img {
-  position: absolute;
-  width: 180px;
-  max-width: none;
   left: 50%;
   top: 50%;
+
+  width: 180px;
+  height: auto;
+
   margin: 0;
+  padding: 0;
+
+  z-index: 4;
+
+  pointer-events: auto;
+}
+
+.kaartjes a img {
+  width: 100%;
+  max-width: none;
+
+  margin: 0;
+
   opacity: 0;
 
   transform: translate(-50%, 100px) rotate(0deg);
@@ -494,45 +599,145 @@ textarea {
     transform 0.8s ease,
     opacity 0.4s ease;
 }
+
 /* KAARTJES KOMEN UIT DE ENVELOP */
 
-#envelop-open:checked ~ .kaartjes img:nth-child(1) {
+#envelop-open:checked ~ .kaartjes a:nth-child(1) img {
   opacity: 1;
-  transform: translate(-400px, -100px) rotate(-18deg);
+  transform: translate(-400px, -0px) rotate(-18deg);
   transition-delay: 0.1s;
 }
 
-#envelop-open:checked ~ .kaartjes img:nth-child(2) {
+#envelop-open:checked ~ .kaartjes a:nth-child(2) img {
   opacity: 1;
-  transform: translate(-290px, -200px) rotate(-8deg);
+  transform: translate(-250px, -100px) rotate(-8deg);
   transition-delay: 0.2s;
 }
 
-#envelop-open:checked ~ .kaartjes img:nth-child(3) {
+#envelop-open:checked ~ .kaartjes a:nth-child(3) img {
   opacity: 1;
-  transform: translate(-150px, -300px) rotate(2deg);
+  transform: translate(-130px, -180px) rotate(2deg);
   transition-delay: 0.3s;
 }
 
-#envelop-open:checked ~ .kaartjes img:nth-child(4) {
+#envelop-open:checked ~ .kaartjes a:nth-child(4) img {
   opacity: 1;
-  transform: translate(50px, -320px) rotate(8deg);
+  transform: translate(50px, -220px) rotate(8deg);
   transition-delay: 0.4s;
 }
 
-#envelop-open:checked ~ .kaartjes img:nth-child(5) {
+#envelop-open:checked ~ .kaartjes a:nth-child(5) img {
   opacity: 1;
-  transform: translate(150px, -250px) rotate(15deg);
+  transform: translate(150px, -150px) rotate(15deg);
   transition-delay: 0.5s;
 }
 
-#envelop-open:checked ~ .kaartjes img:nth-child(6) {
+#envelop-open:checked ~ .kaartjes a:nth-child(6) img {
   opacity: 1;
-  transform: translate(230px, -160px) rotate(22deg);
+  transform: translate(230px, -60px) rotate(22deg);
   transition-delay: 0.6s;
 }
-.kaartjes img:nth-child(1),
-.kaartjes img:nth-child(2),
-.kaartjes img:nth-child(3) {
-  width: 290px;
+
+.kaartjes a:nth-child(1) img,
+.kaartjes a:nth-child(2) img,
+.kaartjes a:nth-child(3) img {
+  width: 280px;
+}
+
+.kaartjes a img {
+  transition:
+    transform 0.8s ease,
+    opacity 0.4s ease,
+    scale 0.2s ease;
+}
+
+.kaartjes a img:hover {
+  scale: 1.08;
+  cursor: pointer;
+}
+
+/* ZAKYNTHOS */
+
+.zakyntos {
+  background-color: var(--koptekst);
+  color: var(--titels);
+}
+
+/* MOBIEL */
+
+@media (max-width: 600px) {
+  /* HEADER */
+
+  header {
+    position: relative;
+    min-height: 100px;
+    padding: 1rem;
+  }
+
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  /* HAMBURGER */
+
+  .hamburger {
+    display: block;
+    margin-left: auto;
+  }
+
+  /* NAVIGATIE VERBORGEN */
+
+  header nav {
+    display: none;
+
+    position: absolute;
+
+    top: 100%;
+    right: 1rem;
+
+    flex-direction: column;
+    gap: 0.5rem;
+
+    padding: 1rem;
+
+    background-color: var(--header);
+
+    z-index: 20;
+  }
+
+  /* MENU OPEN */
+
+  #menu-toggle:checked ~ nav {
+    display: flex;
+  }
+
+  /* ZON EN MAAN */
+
+  header form {
+    display: flex;
+    gap: 0.3rem;
+  }
+
+  /* FILM DETAIL */
+
+  .film-detail {
+    width: 90%;
+
+    grid-template-columns: 1fr;
+
+    gap: var(--whitespace-m);
+
+    padding: var(--whitespace-m);
+  }
+
+  .film-detail img {
+    width: 70%;
+    max-width: 300px;
+    margin: auto;
+  }
+
+  .film-info {
+    width: 100%;
+    text-align: center;
+  }
 }
