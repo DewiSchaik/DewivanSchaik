@@ -444,9 +444,6 @@ article nav a:hover {
   width: 100%;
   height: auto;
 }
-
-/* FILM DETAIL */
-
 .film-detail {
   border: 10px solid var(--geel);
 
@@ -466,9 +463,26 @@ article nav a:hover {
 
   box-sizing: border-box;
 }
+/* FILM DETAIL */
+.reizen-header {
+  position: relative;
+  min-height: 15vh;
+  padding: var(--whitespace-m);
+  background-color: var(--koptekst);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-.film-info {
-  text-align: left;
+.reizen-header h1 {
+  margin: 0;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: var(--step-4);
+  color: var(--titels);
+  text-align: center;
+}
+.reizen-header nav {
+  right: 2%;
 }
 
 /* REIZEN PAGINA */
@@ -481,9 +495,10 @@ article nav a:hover {
   position: relative;
   width: 100%;
   height: 70vh;
+  margin-top: 1rem;
 }
 
-/* ENVELOP */
+/* reizen.html */
 
 #envelop-open {
   display: none;
@@ -658,11 +673,6 @@ article nav a:hover {
 
 /* ZAKYNTHOS */
 
-.zakyntos {
-  background-color: var(--koptekst);
-  color: var(--titels);
-}
-
 /* MOBIEL */
 
 @media (max-width: 600px) {
@@ -740,4 +750,12 @@ article nav a:hover {
     width: 100%;
     text-align: center;
   }
+}
+
+.zakyntos {
+  background-color: var(--koptekst);
+  color: var(--titels);
+}
+.reizen-pagina {
+  background-color: var(--koptekst);
 }

@@ -1,29 +1,59 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="[dewischaik]" />
-    <meta name="color-scheme" content="dark light" />
-
-    <title>[dewischaik]</title>
-    <link rel="stylesheet" href="./assets/style/normal.css" />
+<link rel="stylesheet" href="./assets/style/normal.css" />
     <link rel="stylesheet" href="https://use.typekit.net/zqa2uoo.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap"
       rel="stylesheet"
     />
-  </head>   
-   <main>
-  <body class="zakyntos">  <h1 class="zakyntos">
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="films.html">Films</a>
-      <a href="travel.html">Reizen</a>
-    </nav>
-  
-</main>
+  </head>
+
+  <body class="zakyntos">
+
+    <header class="reizen-header">
+      <h1>zakyntos</h1>
+
+      <input type="checkbox" id="menu-toggle" />
+
+      <label for="menu-toggle" class="hamburger">☰</label>
+
+      <nav class="reizen-nav">
+        <a href="index.html">Home</a>
+        <a href="films.html">Films</a>
+        <a href="travel.html">Reizen</a>
+      </nav>
+
+      <form>
+        <label for="light-mode">
+          <input
+            type="radio"
+            id="light-mode"
+            name="color-theme"
+            value="light"
+          />
+          ☀️
+        </label>
+
+        <label for="dark-mode">
+          <input
+            type="radio"
+            id="dark-mode"
+            name="color-theme"
+            value="dark"
+          />
+          🌙
+        </label>
+      </form>
+    </header>
+
+    <main>
+      <img
+        class="postcard"
+        src="assets/afbeeldingen/postcard.png"
+        alt=""
+      />
+    </main>
+
   </body>
 </html>

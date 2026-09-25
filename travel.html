@@ -16,15 +16,30 @@
       rel="stylesheet"
     />
   </head>
-  <body class="reizen-pagina">
-    <nav>
+  <header class="reizen-header">
+    <h1>REIZEN</h1>
+    <input type="checkbox" id="menu-toggle" />
+
+    <label for="menu-toggle" class="hamburger">☰</label>
+    <nav class="reizen-nav">
       <a href="index.html">Home</a>
       <a href="films.html">Films</a>
       <a href="travel.html">Reizen</a>
     </nav>
 
-    <h1 class="h1kleur">REIZEN</h1>
+    <form>
+      <label for="light-mode">
+        <input type="radio" id="light-mode" name="color-theme" value="light" />
+        ☀️
+      </label>
 
+      <label for="dark-mode">
+        <input type="radio" id="dark-mode" name="color-theme" value="dark" />
+        🌙
+      </label>
+    </form>
+  </header>
+  <body class="reizen-pagina">
     <main>
       <input type="checkbox" id="envelop-open" />
 
