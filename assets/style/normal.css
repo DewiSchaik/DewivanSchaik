@@ -759,3 +759,14 @@ article nav a:hover {
 .reizen-pagina {
   background-color: var(--koptekst);
 }
+.zakyntos main {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.postcard {
+  width: 80%;
+  max-width: 800px;
+}
