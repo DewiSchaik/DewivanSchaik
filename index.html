@@ -1,100 +1,144 @@
 <!doctype html>
-<html lang="en">
+<html lang="nl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="[dewischaik]" />
+    <meta name="author" content="Dewi van Schaik" />
     <meta name="color-scheme" content="dark light" />
 
-    <title>[dewischaik]</title>
+    <title>Dewi's Tuintje</title>
+
     <link rel="stylesheet" href="./assets/style/normal.css" />
     <link rel="stylesheet" href="https://use.typekit.net/zqa2uoo.css" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
 
-    <!-- Importeer het webring component, voeg jouw eigen domein toe in data-page -->
     <script
-      data-page="[https://voorbeeld.nl]"
+      data-page="https://voorbeeld.nl"
       src="https://digitaaltuintje.nl/webring.js"
       defer
     ></script>
   </head>
+
   <body>
-<header>
+    <header>
+      <h1>DEWI'S TUINTJE</h1>
 
-  <h1>DEWI'S TUINTJE</h1>
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="hamburger">☰</label>
 
-  <input type="checkbox" id="menu-toggle">
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="films.html">Films</a>
+        <a href="travel.html">Reizen</a>
+      </nav>
 
-  <label for="menu-toggle" class="hamburger">☰</label>
+      <form>
+        <label for="light-mode">
+          <input
+            type="radio"
+            id="light-mode"
+            name="color-theme"
+            value="light"
+          />
+          ☀️
+        </label>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="films.html">Films</a>
-    <a href="travel.html">Reizen</a>
-  </nav>
+        <label for="dark-mode">
+          <input type="radio" id="dark-mode" name="color-theme" value="dark" />
+          🌙
+        </label>
+      </form>
+    </header>
 
-  <form>
-    <label for="light-mode">
-      <input type="radio" id="light-mode" name="color-theme" value="light">
-      ☀️
-    </label>
-
-    <label for="dark-mode">
-      <input type="radio" id="dark-mode" name="color-theme" value="dark">
-      🌙
-    </label>
-  </form>
-
-</header>
-
- 
-      <article>    
+    <main>
+      <article>
         <h2>OVER MIJ</h2>
-          <main>
-     
+
         <div>
-          <img src="assets/afbeeldingen/minidewi.png" />
+          <img
+            src="assets/afbeeldingen/minidewi.png"
+            alt="Illustratie van Dewi"
+          />
+
           <p>
-          Hoi! Ik ben Dewi van Schaik, ik ben 17 jaar en op 12 november word
+            Hoi! Ik ben Dewi van Schaik, ik ben 17 jaar en op 12 november word
             ik 18. Ik studeer CMD aan de HvA en ben eigenlijk altijd wel met
             iets creatiefs bezig. Ik woon deels in Nieuwegein bij mijn vader en
             deels in Amsterdam bij mijn moeder. Ik heb een superleuke
-            vriendengroep die we My Sheila noemen :) Met hen ben ik vaak op pad
+            vriendengroep die we My Sheila noemen :) Met hen ben ik vaak op pad
             en maken we veel leuke herinneringen. Ik vind het vooral leuk om
             nieuwe projectjes en ideeën te bedenken en gewoon lekker creatief
-            bezig te zijn!</li>
-          </p>    
-        </div> 
-        <img class="kronkel" src="assets/afbeeldingen/Vector.png" />
-      </article>
-      
+            bezig te zijn!
+          </p>
+        </div>
 
+        <img class="kronkel" src="assets/afbeeldingen/Vector.png" alt="" />
+      </article>
 
       <article>
-      <h2 class="films-link">
-  <a href="films.html">FILMS</a>
-</h2>
-<div class="films">
-<a href="horror.html">
-  <img src="assets/afbeeldingen/film 1.WEBP" alt="The Haunting of Hill House" />
-</a>
-  <img src="assets/afbeeldingen/film 2.JPG" />  
-    <img src="assets/afbeeldingen/film 3.PNG" />  
-      <img src="assets/afbeeldingen/film 4.JPG" /> 
-      <a href="jaren2000.html">
-  <img src="assets/afbeeldingen/film 5.JPG" alt="how to lose a guy in 10 days" />
-</a> 
-     <img src="assets/afbeeldingen/film 8.JPG" />
-   <img src="assets/afbeeldingen/film 7.jpg" />
-  <img src="assets/afbeeldingen/film 9.jpg" />
-<img src="assets/afbeeldingen/film 10.jpg" />
-</div>
+        <h2 class="films-link">
+          <a href="films.html">FILMS</a>
+        </h2>
+
+        <div class="films">
+          <a href="horror.html">
+            <img
+              src="assets/afbeeldingen/film 1.WEBP"
+              alt="The Haunting of Hill House"
+            />
+          </a>
+
+          <img src="assets/afbeeldingen/film 2.JPG" alt="" />
+          <img src="assets/afbeeldingen/film 3.PNG" alt="" />
+          <img src="assets/afbeeldingen/film 4.JPG" alt="" />
+
+          <a href="jaren2000.html">
+            <img
+              src="assets/afbeeldingen/film 5.JPG"
+              alt="How to Lose a Guy in 10 Days"
+            />
+          </a>
+
+          <img src="assets/afbeeldingen/film 8.JPG" alt="" />
+          <img src="assets/afbeeldingen/film 7.jpg" alt="" />
+          <img src="assets/afbeeldingen/film 9.jpg" alt="" />
+          <img src="assets/afbeeldingen/film 10.jpg" alt="" />
+        </div>
       </article>
 
-    <article class="reizen">
-  <h2>REIZEN</h2>
- <img class="wereldkaart" src="assets/afbeeldingen/wereldkaart.png" />
-</article>
+      <article class="reizen">
+        <h2 class="reizen-link">
+          <a href="travel.html">REIZEN</a>
+        </h2>
+
+        <img
+          class="wereldkaart"
+          src="assets/afbeeldingen/wereldkaart.png"
+          alt="Wereldkaart"
+        />
+      </article>
     </main>
+
+    <input type="checkbox" id="cookie-sluiten" />
+
+    <div class="cookie-popup">
+      <h2>🍪 Even koekjes!</h2>
+
+      <p>
+        Deze website gebruikt cookies om je bezoek prettiger te maken. Je kunt
+        zelf kiezen of je ze accepteert.
+      </p>
+
+      <div class="cookie-knoppen">
+        <label for="cookie-sluiten">Accepteren</label>
+        <label for="cookie-sluiten">Weigeren</label>
+      </div>
+    </div>
   </body>
 </html>
