@@ -94,7 +94,10 @@
             />
           </a>
 
-          <img src="assets/afbeeldingen/film 2.JPG" alt="speak no evil poster" />
+          <img
+            src="assets/afbeeldingen/film 2.JPG"
+            alt="speak no evil poster"
+          />
           <img src="assets/afbeeldingen/film 3.PNG" alt="" />
           <img src="assets/afbeeldingen/film 4.JPG" alt="" />
 
@@ -125,21 +128,27 @@
       </article>
     </main>
 
-    <input type="checkbox" id="cookie-sluiten" />
+    <!-- <input type="checkbox" id="cookie-sluiten" /> -->
 
-    <div class="cookie-popup">
-      <h2>🍪 Even koekjes!</h2>
+    <button commandfor="cookiedialog" command="show-modal">cookies</button>
 
-      <p>
-        Deze website gebruikt cookies om je bezoek prettiger te maken. Je kunt
-        zelf kiezen of je ze accepteert.
-      </p>
+    <dialog id="cookiedialog" open class="cookie-popup">
+      <form method="dialog">
+        <h2>🍪 Even koekjes!</h2>
+
+        <p>
+          Deze website gebruikt cookies om je bezoek prettiger te maken. Je kunt
+          zelf kiezen of je ze accepteert.
+        </p>
+
+        <button>Cookies zijn ok</button>
+        <button>Neehee geen cookies</button>
+      </form>
 
       <div class="cookie-knoppen">
-        <label for="cookie-sluiten">Accepteren</label>
-        <label for="cookie-sluiten">Weigeren</label>
+        <!-- <label for="cookie-sluiten">Accepteren</label> -->
+        <!-- <label for="cookie-sluiten">Weigeren</label> -->
       </div>
-
+    </dialog>
   </body>
-
 </html>

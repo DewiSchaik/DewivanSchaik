@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "impact dewi";
+  src: url("../type/impact.ttf");
+}
+
 html {
   color-scheme: light;
 
@@ -76,7 +81,9 @@ header {
 /* TITEL LINKS */
 
 header h1 {
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  margin: 0;
+
+  font-family: "impact dewi", "Arial Narrow Bold", sans-serif;
   font-size: var(--step-3);
   color: var(--koptekst);
 
@@ -95,6 +102,10 @@ header nav {
 
   display: flex;
   gap: var(--whitespace-s);
+}
+
+header nav a {
+  color: var(--koptekst);
 }
 /* ZON EN MAAN RECHTSBOVEN */
 
@@ -203,8 +214,15 @@ img {
 .films-link a {
   color: var(--header);
 }
-/* KOPPEN */
 
+@media (max-width: 600px) {
+  .films img {
+    width: 50vw;
+    height: 60vw;
+  }
+}
+
+/* KOPPEN */
 h2 {
   font-family: "Staatliches", sans-serif;
   font-size: var(--step-3);
