@@ -4,7 +4,7 @@ html {
   /* KLEUREN */
   --achtergrond: #fff8ee;
   --kleur: #000000;
-  --koptekst: #f3c8f3;
+  --koptekst: #f7d9f7;
   --header: #d15534;
   --titels: #fd9651;
   --geel: #fab940;
@@ -43,11 +43,10 @@ main {
 }
 
 body {
-    margin: 0;
-    background-color: var(--achtergrond);
-    color: var(--kleur);
-    font-family: ui-sans-serif, sans-serif;
-  }
+  margin: 0;
+  background-color: var(--achtergrond);
+  color: var(--kleur);
+  font-family: ui-sans-serif, sans-serif;
 }
 
 /* TEKST */
@@ -77,8 +76,6 @@ header {
 /* TITEL LINKS */
 
 header h1 {
-  margin: 0;
-
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-size: var(--step-3);
   color: var(--koptekst);
@@ -99,22 +96,6 @@ header nav {
   display: flex;
   gap: var(--whitespace-s);
 }
-
-header nav a {
-  color: var(--header);
-  background-color: var(--koptekst);
-
-  padding: 0.5em 1em;
-  border-radius: 10px;
-
-  text-decoration: none;
-}
-
-header nav a:hover {
-  background-color: var(--titels);
-  color: var(--achtergrond);
-}
-
 /* ZON EN MAAN RECHTSBOVEN */
 
 header form {
@@ -156,7 +137,6 @@ header form input {
   font-size: 2rem;
   cursor: pointer;
   color: var(--koptekst);
-  background-color: var(--achtergrond);
 }
 
 /* ALGEMENE GRID */
@@ -220,13 +200,15 @@ img {
 .films img:hover {
   transform: scale(1.08);
 }
-
+.films-link a {
+  color: var(--header);
+}
 /* KOPPEN */
 
 h2 {
   font-family: "Staatliches", sans-serif;
   font-size: var(--step-3);
-  color: var(--titels);
+  color: var(--header);
 
   text-align: center;
 
@@ -238,29 +220,6 @@ h3 {
   font-family: "Staatliches", sans-serif;
   color: var(--header);
 }
-
-/* FILM LINK */
-
-.films-link a {
-  display: inline-block;
-
-  padding: 10px 20px;
-
-  color: var(--titels);
-  text-decoration: none;
-
-  background-color: var(--koptekst);
-  border-radius: 10px;
-
-  box-shadow: 0 5px 0 var(--titels);
-}
-
-.films-link a:hover {
-  transform: translateY(3px);
-  box-shadow: 0 2px 0 var(--header);
-}
-
-/* KNOPPEN */
 
 button,
 summary {
@@ -284,39 +243,19 @@ textarea {
   padding: 4rem 2rem;
   min-height: 40vh;
   text-align: center;
-  border-radius: 50% 50% 0 0;
+  border-radius: 50% 50% 50% 50%;
   box-sizing: border-box;
-}
-
-.reizen-link {
-  margin: 0 0 2rem;
-}
-
-.reizen-link a {
-  display: inline-block;
-  position: relative;
-  z-index: 2;
-  padding: 10px 20px;
-  background-color: var(--titels);
-  color: var(--geel);
-  text-decoration: none;
-  border-radius: 10px;
-  box-shadow: 0 5px 0 var(--header);
-  transition: 0.2s ease;
-}
-
-.reizen-link a:hover {
-  transform: translateY(3px);
-  box-shadow: 0 2px 0 var(--header);
+  margin-top: var(--whitespace-xl);
 }
 
 .wereldkaart {
   display: block;
-  width: 75vw;
+  width: 70vw;
   max-width: 100%;
   height: auto;
   margin: 0 auto;
 }
+
 #cookie-sluiten {
   display: none;
 }
