@@ -11,13 +11,6 @@
     <link rel="stylesheet" href="./assets/style/normal.css" />
     <link rel="stylesheet" href="https://use.typekit.net/zqa2uoo.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap"
-      rel="stylesheet"
-    />
-
     <script
       data-page="https://voorbeeld.nl"
       src="https://digitaaltuintje.nl/webring.js"
@@ -34,6 +27,7 @@
 
       <nav>
         <a href="index.html">Home</a>
+        <a href="aboutme.html">Over mij</a>
         <a href="films.html">Films</a>
         <a href="travel.html">Reizen</a>
       </nav>
@@ -58,7 +52,9 @@
 
     <main>
       <article>
-        <h2>OVER MIJ</h2>
+        <h2 class="films-link">
+          <a href="aboutme.html">OVER MIJ</a>
+        </h2>
 
         <div>
           <img
@@ -128,8 +124,6 @@
       </article>
     </main>
 
-    <!-- <input type="checkbox" id="cookie-sluiten" /> -->
-
     <button commandfor="cookiedialog" command="show-modal">cookies</button>
 
     <dialog id="cookiedialog" open class="cookie-popup">
@@ -145,10 +139,8 @@
         <button>Neehee geen cookies</button>
       </form>
 
-      <div class="cookie-knoppen">
-        <!-- <label for="cookie-sluiten">Accepteren</label> -->
-        <!-- <label for="cookie-sluiten">Weigeren</label> -->
-      </div>
+      <div class="cookie-knoppen"></div>
     </dialog>
   </body>
+  1
 </html>

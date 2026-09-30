@@ -8,6 +8,12 @@ Het staat model voor digitale tuintjes welke bij 'Het web is voor iedereen' door
 
 [→ Bekijk mijn Figma prototype](https://www.figma.com/proto/L98T9tQbsGSxDZJv4JnHM7/Untitled?node-id=0-1&t=rlDX8zHQZQj9krfK-1)
 
+### checkout wo 30 sep
+
+1. a11y staat voor accessibility en wcag voor Web Content Accessibility Guidelines
+2. alleen met toetsenbord lastiger want ik weet nog alle knopjes.
+3. kleurenblind, het constrast bij dark mode is nog niet goed
+
 ### checkout vr 18 sep
 
 Github is een platform waar je een start kan maken aan het ontwerpen van je eigen website zo koppel je het met code

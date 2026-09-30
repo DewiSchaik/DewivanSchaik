@@ -106,8 +106,8 @@ header nav {
 
 header nav a {
   color: var(--koptekst);
+  font-size: var(--step-0);
 }
-/* ZON EN MAAN RECHTSBOVEN */
 
 header form {
   position: absolute;
@@ -149,7 +149,6 @@ header form input {
   cursor: pointer;
   color: var(--koptekst);
 }
-
 /* ALGEMENE GRID */
 
 div {
@@ -265,7 +264,11 @@ textarea {
   box-sizing: border-box;
   margin-top: var(--whitespace-xl);
 }
-
+.reizen h2 {
+  position: relative;
+  top: -40px;
+  margin-bottom: 40px;
+}
 .wereldkaart {
   display: block;
   width: 70vw;
@@ -274,22 +277,20 @@ textarea {
   margin: 0 auto;
 }
 
-#cookie-sluiten {
-  display: none;
-}
-
 .cookie-popup {
   position: fixed;
-  bottom: 30px;
-  left: 50%;
-  transform: translateX(-50%);
+
+  transform: translate(-50%, -50%);
+
   width: min(400px, 85%);
   padding: 25px;
+
   background-color: var(--achtergrond);
   color: var(--kleur);
   border: 4px solid var(--koptekst);
   border-radius: 20px;
   box-shadow: 0 5px 20px #0003;
+
   z-index: 1000;
   text-align: center;
 }
@@ -327,58 +328,157 @@ textarea {
 #cookie-sluiten:checked ~ .cookie-popup {
   display: none;
 }
-#cookie-sluiten {
-  display: none;
+* {
+  box-sizing: border-box;
 }
 
-.cookie-popup {
-  position: fixed;
-  bottom: 30px;
+/* De hele tijdlijn */
+/* TIJDLIJN */
+.tijdlijn {
+  position: relative;
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 40px 0;
+}
+
+/* Grijze achtergrondlijn */
+.tijdlijn::before {
+  content: "";
+  position: absolute;
   left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background-color: #ddd;
   transform: translateX(-50%);
-  width: min(400px, 85%);
-  padding: 25px;
-  background-color: var(--achtergrond);
-  color: var(--kleur);
-  border: 4px solid var(--koptekst);
-  border-radius: 20px;
-  box-shadow: 0 5px 20px #0003;
-  z-index: 1000;
-  text-align: center;
 }
 
-.cookie-popup h2 {
-  color: var(--header);
-  margin: 0 0 10px;
-}
-
-.cookie-popup p {
-  margin-bottom: 20px;
-}
-
-.cookie-knoppen {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-}
-
-.cookie-knoppen label {
-  padding: 10px 15px;
+/* Gekleurde lijn die meeloopt met scrollen */
+.tijdlijn::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 4px;
+  height: 100%;
   background-color: var(--header);
-  color: white;
+  transform: translateX(-50%) scaleY(0);
+  transform-origin: top;
+  animation: lijn-vullen linear forwards;
+  animation-timeline: scroll(root);
+}
+
+/* Animatie */
+@keyframes lijn-vullen {
+  to {
+    transform: translateX(-50%) scaleY(1);
+  }
+}
+
+/* Momenten op de tijdlijn */
+.moment {
+  position: relative;
+  width: 50%;
+  margin: 100px 0;
+  padding: 0 40px;
+}
+
+/* Om en om links en rechts */
+.moment:nth-child(odd) {
+  margin-right: auto;
+  text-align: right;
+}
+
+.moment:nth-child(even) {
+  margin-left: 50%;
+  text-align: left;
+}
+
+/* Rondjes op de lijn */
+.moment::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: var(--koptekst);
+  border: 3px solid var(--header);
+  z-index: 2;
+  box-sizing: content-box;
+}
+
+/* Rondjes links en rechts van de lijn */
+.moment:nth-child(odd)::before {
+  right: -13px;
+}
+
+.moment:nth-child(even)::before {
+  left: -13px;
+}
+
+/* Tekstvakjes */
+.tijdlijn-tekst {
+  background-color: var(--achtergrond);
+  border: 2px solid var(--geel);
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.tijdlijn-tekst h3 {
+  color: var(--header);
+  margin-top: 0;
+}
+
+/* Mobiele weergave */
+@media (max-width: 600px) {
+  .tijdlijn {
+    margin: 30px 15px;
+    padding: 20px 0;
+  }
+
+  .tijdlijn::before,
+  .tijdlijn::after {
+    left: 15px;
+  }
+
+  .moment,
+  .moment:nth-child(odd),
+  .moment:nth-child(even) {
+    width: 100%;
+    margin: 60px 0;
+    padding-left: 50px;
+    padding-right: 0;
+    text-align: left;
+  }
+
+  .moment:nth-child(odd)::before,
+  .moment:nth-child(even)::before {
+    left: 3px;
+    right: auto;
+  }
+}
+.moment:nth-child(odd) .tijdlijn-tekst {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* Oranje titel rechts uitlijnen */
+.moment:nth-child(odd) .tijdlijn-tekst h3 {
+  text-align: right;
+}
+
+/* Gewone tekst links uitlijnen */
+.moment:nth-child(odd) .tijdlijn-tekst p {
+  text-align: left;
+}
+
+.aboutme {
   border-radius: 10px;
-  cursor: pointer;
-  transition: transform 0.2s ease;
-}
-
-.cookie-knoppen label:hover {
-  transform: scale(1.05);
-  background-color: var(--titels);
-}
-
-/* Popup verbergen na een klik */
-#cookie-sluiten:checked ~ .cookie-popup {
-  display: none;
+  border: 5px solid var(--geel);
 }
 /* films.html */
 .films-header {
@@ -395,12 +495,13 @@ textarea {
   margin: 0;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-size: var(--step-4);
-  color: var(--koptekst);
+  color: var(--titels);
   text-align: center;
 }
 .film-header nav {
   right: 2%;
 }
+
 .knoppenreizen {
   display: flex;
   justify-content: flex-end;
@@ -431,20 +532,6 @@ article nav {
   margin-bottom: var(--whitespace-m);
 }
 
-article nav a {
-  color: var(--header);
-  background-color: var(--koptekst);
-  padding: 0.5em 1em;
-  border-radius: 10px;
-  text-decoration: none;
-  transition: 0.2s ease;
-}
-
-article nav a:hover {
-  background-color: var(--titels);
-  color: var(--achtergrond);
-  transform: translateY(-3px);
-}
 .filmtekst {
   border: 10px solid var(--geel);
 
@@ -479,27 +566,9 @@ article nav a:hover {
   gap: var(--whitespace-m);
   flex-wrap: wrap;
 }
-
 .genre-knoppen a {
-  display: inline-block;
-
-  padding: 0.8rem 1.5rem;
-
-  background-color: var(--koptekst);
   color: var(--header);
-
-  text-decoration: none;
-
-  border-radius: 10px;
-
-  box-shadow: 0 5px 0 var(--titels);
-
-  transition: 0.2s;
-}
-
-.genre-knoppen a:hover {
-  transform: translateY(4px);
-  box-shadow: 0 1px 0 var(--header);
+  font-size: var(--step-0);
 }
 
 /* STOELEN */
@@ -548,25 +617,19 @@ article nav a:hover {
   box-sizing: border-box;
 }
 /* FILM DETAIL */
+header .reizen-nav a {
+  color: var(--header);
+}
+
 .reizen-header {
   position: relative;
   min-height: 15vh;
   padding: var(--whitespace-m);
   background-color: var(--koptekst);
   display: flex;
+  color: var(--header);
   align-items: center;
   justify-content: center;
-}
-
-.reizen-header h1 {
-  margin: 0;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  font-size: var(--step-4);
-  color: var(--titels);
-  text-align: center;
-}
-.reizen-header nav {
-  right: 2%;
 }
 
 /* REIZEN PAGINA */
@@ -762,16 +825,6 @@ article nav a:hover {
 @media (max-width: 600px) {
   /* HEADER */
 
-  header {
-    position: relative;
-    min-height: 100px;
-    padding: 1rem;
-  }
-
-  header h1 {
-    font-size: 2.5rem;
-  }
-
   /* HAMBURGER */
 
   .hamburger {
@@ -856,4 +909,37 @@ article nav a:hover {
   width: 80%;
   max-width: 800px;
   margin-top: 10%;
+}
+
+/* Alle paginaheaders krijgen dezelfde hoogte */
+header,
+header.films-header,
+header.reizen-header {
+  position: relative;
+  height: 180px;
+  min-height: 180px;
+  box-sizing: border-box;
+}
+
+/* Navigatie staat op elke pagina verticaal in het midden */
+header nav {
+  position: absolute;
+  top: 50%;
+  right: 2%;
+  transform: translateY(-50%);
+}
+
+/* De titel mag de header niet hoger maken */
+header h1 {
+  padding: 0;
+}
+
+/* Op mobiel krijgen alle headers dezelfde hoogte */
+@media (max-width: 600px) {
+  header,
+  header.films-header,
+  header.reizen-header {
+    height: 100px;
+    min-height: 100px;
+  }
 }
