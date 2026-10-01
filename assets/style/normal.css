@@ -33,15 +33,19 @@ html {
 
 html:has([value="dark"]:checked) {
   color-scheme: dark;
-
   --achtergrond: #a69a89;
   --kleur: #fff8ee;
-  --koptekst: #926e92;
+  --koptekst: #e4bce4;
   --header: #813222;
   --titels: #813222;
   --geel: #b57f1b;
 }
 
+/* Afbeelding aanpassen in dark mode */
+html:has([value="dark"]:checked) .wereldkaart,
+html:has([value="dark"]:checked) .kronkel {
+  filter: brightness(0.8);
+}
 /* BASIS */
 main {
   margin-top: 0;
@@ -84,7 +88,7 @@ header h1 {
   margin: 0;
 
   font-family: "impact dewi", "Arial Narrow Bold", sans-serif;
-  font-size: var(--step-3);
+  font-size: var(--step-4);
   color: var(--koptekst);
 
   text-align: left;
@@ -151,11 +155,39 @@ header form input {
 }
 /* ALGEMENE GRID */
 
-div {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+.over-mij-content {
+  display: flex;
+  flex-direction: row-reverse;
   align-items: center;
-  gap: var(--whitespace-m);
+  justify-content: space-between;
+  gap: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.over-mij-content img {
+  width: 35%;
+  height: auto;
+  object-fit: contain;
+}
+
+.over-mij-content p {
+  width: 65%;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+/* Mobiele weergave */
+@media (max-width: 600px) {
+  .over-mij-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .over-mij-content img,
+  .over-mij-content p {
+    width: 100%;
+  }
 }
 
 /* AFBEELDINGEN */
@@ -212,6 +244,7 @@ img {
 }
 .films-link a {
   color: var(--header);
+  font-size: var(--step-2);
 }
 
 @media (max-width: 600px) {
@@ -277,62 +310,61 @@ textarea {
   margin: 0 auto;
 }
 
+/* Cookie popup */
 .cookie-popup {
   position: fixed;
-
-  transform: translate(-50%, -50%);
-
+  inset: 0;
+  margin: auto;
   width: min(400px, 85%);
+  height: fit-content;
   padding: 25px;
-
   background-color: var(--achtergrond);
   color: var(--kleur);
   border: 4px solid var(--koptekst);
   border-radius: 20px;
   box-shadow: 0 5px 20px #0003;
-
   z-index: 1000;
   text-align: center;
 }
 
+/* Titel */
 .cookie-popup h2 {
   color: var(--header);
   margin: 0 0 10px;
 }
 
+/* Tekst */
 .cookie-popup p {
   margin-bottom: 20px;
 }
 
-.cookie-knoppen {
+/* Knoppen */
+.cookie-popup form {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   gap: 10px;
 }
 
-.cookie-knoppen label {
+.cookie-popup button {
   padding: 10px 15px;
   background-color: var(--header);
   color: white;
+  border: none;
   border-radius: 10px;
   cursor: pointer;
   transition: transform 0.2s ease;
 }
 
-.cookie-knoppen label:hover {
+.cookie-popup button:hover {
   transform: scale(1.05);
   background-color: var(--titels);
 }
 
-/* Popup verbergen na een klik */
-#cookie-sluiten:checked ~ .cookie-popup {
-  display: none;
-}
+/* Alles netjes berekenen */
 * {
   box-sizing: border-box;
 }
-
-/* De hele tijdlijn */
 /* TIJDLIJN */
 .tijdlijn {
   position: relative;
@@ -620,7 +652,17 @@ article nav {
 header .reizen-nav a {
   color: var(--header);
 }
+.terug-nav {
+  position: absolute;
+  top: 90px;
+  left: 2%;
+}
 
+.terug-nav a {
+  color: var(--header);
+}
+
+/* reizen.html */
 .reizen-header {
   position: relative;
   min-height: 15vh;
@@ -644,9 +686,10 @@ header .reizen-nav a {
   height: 70vh;
   margin-top: 1rem;
 }
-
-/* reizen.html */
-
+.reizen-header h1 {
+  color: var(--header);
+  font-size: var(--step-4);
+}
 #envelop-open {
   display: none;
 }
@@ -930,10 +973,6 @@ header nav {
 }
 
 /* De titel mag de header niet hoger maken */
-header h1 {
-  padding: 0;
-}
-
 /* Op mobiel krijgen alle headers dezelfde hoogte */
 @media (max-width: 600px) {
   header,
