@@ -14,22 +14,18 @@ html {
   --titels: #fd9651;
   --geel: #fab940;
 
-  /* WITRUIMTE */
   --whitespace-xs: calc(var(--whitespace-s) * 0.5);
   --whitespace-s: 1rem;
   --whitespace-m: calc(var(--whitespace-s) * 2);
   --whitespace-l: calc(var(--whitespace-s) * 4);
   --whitespace-xl: calc(var(--whitespace-s) * 6);
 
-  /* TYPOGRAFIE */
   --step-0: clamp(1rem, 0.9167rem + 0.3704vw, 1.25rem);
   --step-1: clamp(1.2rem, 0.975rem + 1vw, 1.875rem);
   --step-2: clamp(1.44rem, 0.9825rem + 2.0333vw, 2.8125rem);
   --step-3: clamp(1.728rem, 0.8978rem + 3.69vw, 4.2188rem);
   --step-4: clamp(2.0736rem, 0.6554rem + 6.303vw, 6.3281rem);
 }
-
-/* DARK MODE */
 
 html:has([value="dark"]:checked) {
   color-scheme: dark;
@@ -41,12 +37,11 @@ html:has([value="dark"]:checked) {
   --geel: #b57f1b;
 }
 
-/* Afbeelding aanpassen in dark mode */
 html:has([value="dark"]:checked) .wereldkaart,
 html:has([value="dark"]:checked) .kronkel {
   filter: brightness(0.8);
 }
-/* BASIS */
+/* index.html */
 main {
   margin-top: 0;
 }
@@ -58,8 +53,6 @@ body {
   font-family: ui-sans-serif, sans-serif;
 }
 
-/* TEKST */
-
 p {
   font-size: var(--step-0);
   line-height: 1.5;
@@ -68,8 +61,6 @@ p {
   margin-block: var(--whitespace-s);
   margin-inline: auto;
 }
-
-/* HEADER */
 
 header {
   position: relative;
@@ -82,8 +73,6 @@ header {
   align-items: center;
 }
 
-/* TITEL LINKS */
-
 header h1 {
   margin: 0;
 
@@ -93,10 +82,7 @@ header h1 {
 
   text-align: left;
 }
-
-/* NAVIGATIE RECHTS IN HET MIDDEN */
-
-header nav {
+s header nav {
   position: absolute;
 
   right: 2%;
@@ -141,8 +127,6 @@ header form input {
   display: none;
 }
 
-/* HAMBURGERMENU */
-
 #menu-toggle {
   display: none;
 }
@@ -153,7 +137,6 @@ header form input {
   cursor: pointer;
   color: var(--koptekst);
 }
-/* ALGEMENE GRID */
 
 .over-mij-content {
   display: flex;
@@ -177,7 +160,6 @@ header form input {
   line-height: 1.6;
 }
 
-/* Mobiele weergave */
 @media (max-width: 600px) {
   .over-mij-content {
     flex-direction: column;
@@ -189,8 +171,6 @@ header form input {
     width: 100%;
   }
 }
-
-/* AFBEELDINGEN */
 
 img {
   width: 70%;
@@ -217,8 +197,6 @@ img {
     margin-top: -1rem;
   }
 }
-
-/* FILMS */
 
 .films {
   display: flex;
@@ -254,7 +232,6 @@ img {
   }
 }
 
-/* KOPPEN */
 h2 {
   font-family: "Staatliches", sans-serif;
   font-size: var(--step-3);
@@ -283,7 +260,6 @@ textarea {
   font: inherit;
 }
 
-/* REIZEN */
 .reizen {
   display: flex;
   flex-direction: column;
@@ -293,7 +269,7 @@ textarea {
   padding: 4rem 2rem;
   min-height: 40vh;
   text-align: center;
-  border-radius: 50% 50% 50% 50%;
+  border-radius: 50% 50% 0 0;
   box-sizing: border-box;
   margin-top: var(--whitespace-xl);
 }
@@ -310,7 +286,6 @@ textarea {
   margin: 0 auto;
 }
 
-/* Cookie popup */
 .cookie-popup {
   position: fixed;
   inset: 0;
@@ -327,18 +302,15 @@ textarea {
   text-align: center;
 }
 
-/* Titel */
 .cookie-popup h2 {
   color: var(--header);
   margin: 0 0 10px;
 }
 
-/* Tekst */
 .cookie-popup p {
   margin-bottom: 20px;
 }
 
-/* Knoppen */
 .cookie-popup form {
   display: flex;
   flex-direction: column;
@@ -361,11 +333,10 @@ textarea {
   background-color: var(--titels);
 }
 
-/* Alles netjes berekenen */
 * {
   box-sizing: border-box;
 }
-/* TIJDLIJN */
+/* aboutme.html */
 .tijdlijn {
   position: relative;
   max-width: 1000px;
@@ -373,7 +344,6 @@ textarea {
   padding: 40px 0;
 }
 
-/* Grijze achtergrondlijn */
 .tijdlijn::before {
   content: "";
   position: absolute;
@@ -385,7 +355,6 @@ textarea {
   transform: translateX(-50%);
 }
 
-/* Gekleurde lijn die meeloopt met scrollen */
 .tijdlijn::after {
   content: "";
   position: absolute;
@@ -400,14 +369,12 @@ textarea {
   animation-timeline: scroll(root);
 }
 
-/* Animatie */
 @keyframes lijn-vullen {
   to {
     transform: translateX(-50%) scaleY(1);
   }
 }
 
-/* Momenten op de tijdlijn */
 .moment {
   position: relative;
   width: 50%;
@@ -415,7 +382,6 @@ textarea {
   padding: 0 40px;
 }
 
-/* Om en om links en rechts */
 .moment:nth-child(odd) {
   margin-right: auto;
   text-align: right;
@@ -425,8 +391,6 @@ textarea {
   margin-left: 50%;
   text-align: left;
 }
-
-/* Rondjes op de lijn */
 .moment::before {
   content: "";
   position: absolute;
@@ -440,7 +404,6 @@ textarea {
   box-sizing: content-box;
 }
 
-/* Rondjes links en rechts van de lijn */
 .moment:nth-child(odd)::before {
   right: -13px;
 }
@@ -449,10 +412,9 @@ textarea {
   left: -13px;
 }
 
-/* Tekstvakjes */
 .tijdlijn-tekst {
   background-color: var(--achtergrond);
-  border: 2px solid var(--geel);
+  border: 5px solid var(--koptekst);
   border-radius: 12px;
   padding: 20px;
 }
@@ -462,7 +424,6 @@ textarea {
   margin-top: 0;
 }
 
-/* Mobiele weergave */
 @media (max-width: 600px) {
   .tijdlijn {
     margin: 30px 15px;
@@ -498,12 +459,10 @@ textarea {
   gap: 20px;
 }
 
-/* Oranje titel rechts uitlijnen */
 .moment:nth-child(odd) .tijdlijn-tekst h3 {
   text-align: right;
 }
 
-/* Gewone tekst links uitlijnen */
 .moment:nth-child(odd) .tijdlijn-tekst p {
   text-align: left;
 }
@@ -566,7 +525,7 @@ article nav {
 
 .filmtekst {
   border: 10px solid var(--geel);
-
+  background-color: var(--koptekst);
   width: 80vw;
   max-width: 800px;
   min-height: 40vh;
@@ -591,7 +550,6 @@ article nav {
   margin-top: -2rem;
 }
 
-/* GENRE KNOPPEN */
 .genre-knoppen {
   display: flex;
   justify-content: center;
@@ -602,8 +560,6 @@ article nav {
   color: var(--header);
   font-size: var(--step-0);
 }
-
-/* STOELEN */
 
 .stoelen {
   position: fixed;
@@ -619,8 +575,6 @@ article nav {
 
   pointer-events: none;
 }
-
-/* HAUNTING OF HILL HOUSE */
 
 .hauntingoffhillhouse {
   max-width: 400px;
@@ -648,7 +602,7 @@ article nav {
 
   box-sizing: border-box;
 }
-/* FILM DETAIL */
+
 header .reizen-nav a {
   color: var(--header);
 }
@@ -673,8 +627,6 @@ header .reizen-nav a {
   align-items: center;
   justify-content: center;
 }
-
-/* REIZEN PAGINA */
 
 .reizen-pagina {
   background-color: var(--koptekst);
@@ -724,8 +676,6 @@ header .reizen-nav a {
   top: 464px;
 }
 
-/* ZEGEL */
-
 .zegel {
   position: absolute;
 
@@ -752,8 +702,6 @@ header .reizen-nav a {
   transform: scale(1.1);
 }
 
-/* ENVELOP OPENEN */
-
 #envelop-open:checked ~ .eerste-envelop {
   opacity: 0;
 }
@@ -770,8 +718,6 @@ header .reizen-nav a {
 #envelop-open:checked ~ .envelop-voor {
   opacity: 1;
 }
-
-/* KAARTJES */
 
 .kaartjes a {
   position: absolute;
@@ -804,8 +750,6 @@ header .reizen-nav a {
     transform 0.8s ease,
     opacity 0.4s ease;
 }
-
-/* KAARTJES KOMEN UIT DE ENVELOP */
 
 #envelop-open:checked ~ .kaartjes a:nth-child(1) img {
   opacity: 1;
@@ -861,7 +805,6 @@ header .reizen-nav a {
   cursor: pointer;
 }
 
-/* KAARTJES OP MOBIEL */
 @media (max-width: 600px) {
   .kaartjes a {
     width: 125px;
@@ -877,13 +820,12 @@ header .reizen-nav a {
     width: 140%;
   }
 
-  /* Positie van de kaartjes */
-  #envelop-open:checked ~ .kaartjes a:nth-child(1) img {
+  = #envelop-open:checked ~ .kaartjes a:nth-child(1) img {
     transform: translate(-230px, -20px) rotate(-18deg);
   }
 
   #envelop-open:checked ~ .kaartjes a:nth-child(2) img {
-    transform: translate(-195px, -75px) rotate(-8deg);
+    transform: translate(-225px, -75px) rotate(-8deg);
   }
 
   #envelop-open:checked ~ .kaartjes a:nth-child(3) img {
@@ -902,7 +844,6 @@ header .reizen-nav a {
     transform: translate(105px, -20px) rotate(22deg);
   }
 }
-/* ZAKYNTHOS */
 
 /* MOBIEL */
 
