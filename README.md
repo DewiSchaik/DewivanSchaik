@@ -189,3 +189,12 @@ Vanuit de inventarisatie: wat wil ik zelf maken?
 ### opdracht 1 ma 7 sep
 
 ![opdacht1](assets/afbeeldingen/7332d3d5-394e-4fe7-a8ac-4b9d363900bb.JPG)
+
+## deepdives
+
+<details>
+  <summary>Mijn turnenpagina</summary>
+
+Hier staat de tekst die verschijnt als je op "Mijn turnenpagina" klikt.
+
+</details>
