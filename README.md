@@ -195,6 +195,8 @@ Vanuit de inventarisatie: wat wil ik zelf maken?
 <details>
   <summary>sprint 0</summary>
 
+### Praktische CSS
+
 1. Een lelijke HTML pagina maken
 2. Een lelijke pagina leesbaar maken
 3. Een lelijke pagina consistent en overzichtelijk maken
@@ -202,22 +204,32 @@ Vanuit de inventarisatie: wat wil ik zelf maken?
 
 [codepen praktische css](https://codepen.io/editor/dewi-schaik/pen/01a10b86-e8ce-7cba-8173-203e2c0a1a7b)
 
-Interactie: MMD, micro-interacties, forms
+### Interactie: MMD, micro-interacties, forms
 
 [Figma wok to walk](https://www.figma.com/proto/JXjFYyCqFHPs894RKiKhFK/Untitled?node-id=1-2&page-id=0%3A1&starting-point-node-id=1%3A2&t=m1uBl49upFAy6gsb-1)
 
 </details>
 <details>
   <summary>sprint 1</summary>
+
+### light en dark theme
+
 Oefening 1 - Light & Dark 101
 
 [light & dark](https://codepen.io/editor/dewi-schaik/pen/01a10bb5-61c8-74ac-9910-a55da2a2b910)
+
 Oefening 2 - Twee thema's
 
 [2 themas codepen](https://codepen.io/editor/shooft/pen/01a01bde-e100-75a4-ac42-56e063450eec)
 
+### Mooie kleuren en gradients
+
 Oefening 1 - De zes gradients
 
 [6 gradients codepen](https://codepen.io/editor/shooft/pen/01a0768e-5189-7480-9954-063000ee210d)
+
+Oefening 2 - Vlaggen en co
+
+[CodePen - Oefening 2](https://codepen.io/editor/shooft/pen/01a078b7-6ca4-718c-bdfe-6e7b7e330c93)
 
 </details>
