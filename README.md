@@ -197,6 +197,10 @@ Vanuit de inventarisatie: wat wil ik zelf maken?
 
 1. Een lelijke HTML pagina maken
 
-[Bekijk mijn CodePen](https://codepen.io/editor/dewi-schaik/pen/01a10b86-e8ce-7cba-8173-203e2c0a1a7b)
+[Lelijke html pagina](https://codepen.io/editor/dewi-schaik/pen/01a10b86-e8ce-7cba-8173-203e2c0a1a7b)
+
+2. Een lelijke pagina leesbaar maken
+
+[Leesbaar maken](https://codepen.io/editor/dewi-schaik/pen/01a10b86-e8ce-7cba-8173-203e2c0a1a7b)
 
 </details>
