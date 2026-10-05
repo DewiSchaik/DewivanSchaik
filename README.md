@@ -8,7 +8,7 @@ Het staat model voor digitale tuintjes welke bij 'Het web is voor iedereen' door
 
 [→ Bekijk mijn Figma prototype](https://www.figma.com/proto/L98T9tQbsGSxDZJv4JnHM7/Untitled?node-id=0-1&t=rlDX8zHQZQj9krfK-1)
 
-### retropect vr 2 okt
+### retrospect vr 2 okt
 
 ![retrospective](assets/afbeeldingen/IMG_9193.jpg)
 ![retrospective](assets/afbeeldingen/IMG_9194.jpg)

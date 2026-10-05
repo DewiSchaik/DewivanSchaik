@@ -336,6 +336,83 @@ textarea {
 * {
   box-sizing: border-box;
 }
+
+footer {
+  background-color: var(--geel);
+  height: 400px;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+}
+
+footer img {
+  width: 40%;
+  max-width: none;
+  margin: 0;
+  display: block;
+}
+@media (max-width: 600px) {
+  footer img {
+    width: 50%;
+  }
+}
+
+/* Tekst in het midden */
+.footer-info {
+  margin-left: 20px;
+  margin-bottom: 150px;
+}
+
+.footer-info h2 {
+  margin: 0 0 15px;
+}
+
+.footer-info p {
+  margin: 5px 0;
+}
+
+.footer-info a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.footer-info a:hover {
+  text-decoration: underline;
+}
+
+/* Social media */
+.socials p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 5px 0;
+}
+
+.socials img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+/* Cookies-knop */
+.cookie-knop {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+
+  background-color: var(--titels);
+  color: var(--color);
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.cookie-knop:hover {
+  transform: scale(1.05);
+}
 /* aboutme.html */
 .tijdlijn {
   position: relative;
