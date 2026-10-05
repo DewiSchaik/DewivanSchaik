@@ -242,4 +242,32 @@ Oefening 2 - Cards cards cards
 
 [cards](https://codepen.io/editor/dewi-schaik/pen/01a10bea-25bc-7492-bc96-74e8c17ce2e7)
 
+Oefening 3 - Responsive webshop
+
+[responive webshop](https://codepen.io/editor/shooft/pen/01a054fb-d5e2-74a3-87b7-65b7e5582177)
+
+### Responsive grid + Grid-areas
+
+Oefening 1 - Een grid met Grid area maken
+[grid area](https://codepen.io/editor/dewi-schaik/pen/01a10c04-26f6-77ed-adf3-c366acbe0b15)
+
+</details>
+
+<details>
+  <summary>sprint 2</summary>
+
+### Buttons, states en selectors
+
+### Buttons + Dialogs
+
+### Position + Dialogs
+
+### Meer interactie met HTML en CSS
+
+</details>
+<details>
+  <summary>sprint 3</summary>
+
+### Interessantere layouts
+
 </details>
