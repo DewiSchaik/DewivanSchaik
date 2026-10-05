@@ -1013,6 +1013,34 @@ header .reizen-nav a {
   background-color: var(--koptekst);
   color: var(--titels);
 }
+.postcard-tekst {
+  padding: 0px 30px 30px;
+  text-align: left;
+}
+
+.postcard-tekst h2 {
+  margin-bottom: 25px;
+  font-size: 1.8rem;
+}
+
+.informatie h3 {
+  margin-top: 20px;
+  margin-bottom: 5px;
+  font-size: 1rem;
+}
+
+.informatie p {
+  margin: 5px 0;
+}
+
+.informatie a {
+  color: var(--titels);
+  text-decoration: underline;
+}
+
+.informatie a:hover {
+  opacity: 0.7;
+}
 .reizen-pagina {
   background-color: var(--koptekst);
 }
