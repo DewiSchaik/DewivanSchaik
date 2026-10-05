@@ -212,5 +212,7 @@ Interactie: MMD, micro-interacties, forms
 Oefening 1 - Light & Dark 101
 
 [light & dark](https://codepen.io/editor/dewi-schaik/pen/01a10bb5-61c8-74ac-9910-a55da2a2b910)
+Oefening 2 - Twee thema's
+[CodePen - Oefening 2](https://codepen.io/editor/shooft/pen/01a01bde-e100-75a4-ac42-56e063450eec)
 
 </details>
