@@ -193,8 +193,10 @@ Vanuit de inventarisatie: wat wil ik zelf maken?
 ## deepdives
 
 <details>
-  <summary>Mijn turnenpagina</summary>
+  <summary>sprint 0</summary>
 
-Hier staat de tekst die verschijnt als je op "Mijn turnenpagina" klikt.
+1. Een lelijke HTML pagina maken
+
+[Bekijk mijn CodePen](https://codepen.io/editor/dewi-schaik/pen/01a10b86-e8ce-7cba-8173-203e2c0a1a7b)
 
 </details>
