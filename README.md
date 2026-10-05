@@ -226,10 +226,20 @@ Oefening 2 - Twee thema's
 
 Oefening 1 - De zes gradients
 
-[6 gradients codepen](https://codepen.io/editor/shooft/pen/01a0768e-5189-7480-9954-063000ee210d)
+[6 gradients codepen](https://codepen.io/editor/dewi-schaik/pen/01a10bd8-7ce7-749e-8728-fcacb878a791)
 
 Oefening 2 - Vlaggen en co
 
-[CodePen - Oefening 2](https://codepen.io/editor/shooft/pen/01a078b7-6ca4-718c-bdfe-6e7b7e330c93)
+[vlaggen](https://codepen.io/editor/dewi-schaik/pen/01a10bd7-dcaa-766d-8bf8-a7fe024aca17)
+
+### Grid 101 + Media queries
+
+Oefening 1 - Meet the properties
+
+[Grid codepen](https://codepen.io/editor/dewi-schaik/pen/01a10bd6-9de5-7089-9679-c3d78392601e)
+
+Oefening 2 - Cards cards cards
+
+[cards](https://codepen.io/editor/dewi-schaik/pen/01a10bea-25bc-7492-bc96-74e8c17ce2e7)
 
 </details>
