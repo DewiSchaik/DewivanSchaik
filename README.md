@@ -196,11 +196,10 @@ Vanuit de inventarisatie: wat wil ik zelf maken?
   <summary>sprint 0</summary>
 
 1. Een lelijke HTML pagina maken
-
-[Lelijke html pagina](https://codepen.io/editor/dewi-schaik/pen/01a10b86-e8ce-7cba-8173-203e2c0a1a7b)
-
 2. Een lelijke pagina leesbaar maken
+3. Een lelijke pagina consistent en overzichtelijk maken
+4. Interactie: van niet lelijk, naar niet stuk
 
-[Leesbaar maken](https://codepen.io/editor/dewi-schaik/pen/01a10b86-e8ce-7cba-8173-203e2c0a1a7b)
+[codepen praktische css](https://codepen.io/editor/dewi-schaik/pen/01a10b86-e8ce-7cba-8173-203e2c0a1a7b)
 
 </details>
