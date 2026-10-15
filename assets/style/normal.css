@@ -1314,7 +1314,6 @@ header .reizen-nav a {
   .postcard {
     width: 92%;
     height: auto;
-    min-height: 500px;
     padding: 20px;
     margin: 5% auto;
   }
