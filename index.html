@@ -18,36 +18,41 @@
     ></script>
   </head>
 
-  <body>
+  <body class="home">
     <header>
       <h1>DEWI'S TUINTJE</h1>
 
       <input type="checkbox" id="menu-toggle" />
       <label for="menu-toggle" class="hamburger">☰</label>
+      <div class="navigatie">
+        <form>
+          <label for="light-mode">
+            <input
+              type="radio"
+              id="light-mode"
+              name="color-theme"
+              value="light"
+            />
+            ☀️
+          </label>
 
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="aboutme.html">Over mij</a>
-        <a href="films.html">Films</a>
-        <a href="travel.html">Reizen</a>
-      </nav>
-
-      <form>
-        <label for="light-mode">
-          <input
-            type="radio"
-            id="light-mode"
-            name="color-theme"
-            value="light"
-          />
-          ☀️
-        </label>
-
-        <label for="dark-mode">
-          <input type="radio" id="dark-mode" name="color-theme" value="dark" />
-          🌙
-        </label>
-      </form>
+          <label for="dark-mode">
+            <input
+              type="radio"
+              id="dark-mode"
+              name="color-theme"
+              value="dark"
+            />
+            🌙
+          </label>
+        </form>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="aboutme.html">Over mij</a>
+          <a href="films.html">Films</a>
+          <a href="travel.html">Reizen</a>
+        </nav>
+      </div>
     </header>
 
     <main>
@@ -136,8 +141,6 @@
     </main>
 
     <footer>
-      <img src="assets/afbeeldingen/bloementjes.png" alt="Bloementjes" />
-
       <div class="footer-info">
         <h2>DEWISCHAIK</h2>
 

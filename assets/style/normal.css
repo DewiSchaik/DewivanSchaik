@@ -1,12 +1,15 @@
 @font-face {
   font-family: "impact dewi";
+
   src: url("../type/impact.ttf");
 }
 
 html {
   color-scheme: light;
+  scroll-behavior: smooth;
 
   /* KLEUREN */
+
   --achtergrond: #fff8ee;
   --kleur: #000000;
   --koptekst: #f7d9f7;
@@ -29,11 +32,17 @@ html {
 
 html:has([value="dark"]:checked) {
   color-scheme: dark;
+
   --achtergrond: #a69a89;
+
   --kleur: #fff8ee;
+
   --koptekst: #e4bce4;
+
   --header: #813222;
+
   --titels: #813222;
+
   --geel: #b57f1b;
 }
 
@@ -41,71 +50,84 @@ html:has([value="dark"]:checked) .wereldkaart,
 html:has([value="dark"]:checked) .kronkel {
   filter: brightness(0.8);
 }
+
 /* index.html */
+
 main {
   margin-top: 0;
+}
+body.home {
+  background-color: var(--achtergrond);
 }
 
 body {
   margin: 0;
-  background-color: var(--achtergrond);
+
+  background-color: var(--koptekst);
+
   color: var(--kleur);
+
   font-family: ui-sans-serif, sans-serif;
 }
 
 p {
   font-size: var(--step-0);
+
   line-height: 1.5;
+
   color: var(--kleur);
+
   max-width: 30em;
+
   margin-block: var(--whitespace-s);
+
   margin-inline: auto;
 }
 
 header {
   position: relative;
+
   min-height: 15vh;
+
   padding: var(--whitespace-m);
 
-  background-color: var(--header);
+  background-color: var(--koptekst);
 
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  gap: 16px;
 }
 
 header h1 {
   margin: 0;
 
   font-family: "impact dewi", "Arial Narrow Bold", sans-serif;
+
   font-size: var(--step-4);
-  color: var(--koptekst);
+
+  color: var(--header);
 
   text-align: left;
 }
-s header nav {
-  position: absolute;
 
-  right: 2%;
-  top: 50%;
-
+header nav {
   transform: translateY(-50%);
 
   display: flex;
+
   gap: var(--whitespace-s);
 }
 
 header nav a {
   color: var(--koptekst);
+
   font-size: var(--step-0);
 }
 
 header form {
-  position: absolute;
-
-  right: var(--whitespace-m);
-  top: var(--whitespace-s);
-
   display: flex;
+
   gap: 0.5rem;
 }
 
@@ -127,42 +149,88 @@ header form input {
   display: none;
 }
 
-#menu-toggle {
+\#menu-toggle {
   display: none;
+}
+
+.navigatie {
+  height: 100%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: space-between;
+
+  align-items: flex-end;
+
+  gap: 8px;
+
+  padding-bottom: 32px;
+}
+.navigatie a {
+  color: var(--header);
 }
 
 .hamburger {
   display: none;
+
   font-size: 2rem;
+
   cursor: pointer;
-  color: var(--koptekst);
+
+  color: var(--header);
 }
 
+#menu-toggle {
+  display: none;
+}
 .over-mij-content {
   display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  justify-content: space-between;
-  gap: 60px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
 
+  flex-direction: row-reverse;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 60px;
+
+  max-width: 1200px;
+
+  margin: 0 auto 40px auto;
+
+  padding: 24px;
+}
+#menu-toggle:checked ~ .navigatie nav {
+  display: flex;
+}
 .over-mij-content img {
   width: 35%;
+
   height: auto;
+
   object-fit: contain;
 }
 
 .over-mij-content p {
   width: 65%;
+
   font-size: 20px;
+
   line-height: 1.6;
+}
+
+@media (max-width: 787px) {
+  .over-mij-content p {
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 600px) {
   .over-mij-content {
     flex-direction: column;
+
     gap: 20px;
   }
 
@@ -174,13 +242,19 @@ header form input {
 
 img {
   width: 70%;
+
   max-width: 400px;
+
   justify-self: center;
+
   margin-block-start: var(--whitespace-m);
 }
+
 .kronkel {
   width: 100vw;
+
   max-width: none;
+
   margin-top: -5rem;
 
   position: relative;
@@ -200,16 +274,21 @@ img {
 
 .films {
   display: flex;
+
   gap: var(--whitespace-m);
+
   overflow-x: auto;
+
   padding: var(--whitespace-m);
 }
 
 .films img {
   width: 25vw;
+
   height: 30vw;
 
   object-fit: cover;
+
   flex-shrink: 0;
 
   margin: 0;
@@ -220,31 +299,38 @@ img {
 .films img:hover {
   transform: scale(1.08);
 }
+
 .films-link a {
   color: var(--header);
+
   font-size: var(--step-2);
 }
 
 @media (max-width: 600px) {
   .films img {
     width: 50vw;
+
     height: 60vw;
   }
 }
 
 h2 {
   font-family: "Staatliches", sans-serif;
+
   font-size: var(--step-3);
+
   color: var(--header);
 
   text-align: center;
 
   margin-block-start: var(--whitespace-l);
+
   margin-block-end: var(--whitespace-s);
 }
 
 h3 {
   font-family: "Staatliches", sans-serif;
+
   color: var(--header);
 }
 
@@ -262,48 +348,79 @@ textarea {
 
 .reizen {
   display: flex;
+
   flex-direction: column;
+
   align-items: center;
+
   justify-content: center;
+
   background-color: var(--koptekst);
+
   padding: 4rem 2rem;
+
   min-height: 40vh;
+
   text-align: center;
+
   border-radius: 50% 50% 0 0;
+
   box-sizing: border-box;
+
   margin-top: var(--whitespace-xl);
 }
+
 .reizen h2 {
   position: relative;
+
   top: -40px;
+
   margin-bottom: 40px;
 }
+
 .wereldkaart {
   display: block;
+
   width: 70vw;
+
   max-width: 100%;
+
   height: auto;
+
   margin: 0 auto;
 }
 
 .cookie-popup {
   position: fixed;
+
   inset: 0;
+
   margin: auto;
+
   width: min(400px, 85%);
+
   height: fit-content;
+
   padding: 25px;
+
   background-color: var(--achtergrond);
+
   color: var(--kleur);
+
   border: 4px solid var(--koptekst);
+
   border-radius: 20px;
+
   box-shadow: 0 5px 20px #0003;
+
   z-index: 1000;
+
   text-align: center;
 }
 
 .cookie-popup h2 {
   color: var(--header);
+
   margin: 0 0 10px;
 }
 
@@ -313,23 +430,33 @@ textarea {
 
 .cookie-popup form {
   display: flex;
+
   flex-direction: column;
+
   align-items: center;
+
   gap: 10px;
 }
 
 .cookie-popup button {
   padding: 10px 15px;
+
   background-color: var(--header);
+
   color: white;
+
   border: none;
+
   border-radius: 10px;
+
   cursor: pointer;
+
   transition: transform 0.2s ease;
 }
 
 .cookie-popup button:hover {
   transform: scale(1.05);
+
   background-color: var(--titels);
 }
 
@@ -338,29 +465,48 @@ textarea {
 }
 
 footer {
-  background-color: var(--geel);
   height: 400px;
+
   overflow: hidden;
+
   display: flex;
+
   align-items: flex-end;
+
   position: relative;
+
+  justify-content: center;
+
+  background-image: url("/assets/afbeeldingen/bloementjes.png");
+
+  background-color: var(--geel);
+
+  background-size: 400px;
+
+  background-repeat: no-repeat;
+
+  background-position: bottom left;
 }
 
 footer img {
   width: 40%;
+
   max-width: none;
+
   margin: 0;
+
   display: block;
 }
+
 @media (max-width: 600px) {
   footer img {
     width: 50%;
   }
 }
 
-/* Tekst in het midden */
 .footer-info {
   margin-left: 20px;
+
   margin-bottom: 150px;
 }
 
@@ -374,6 +520,7 @@ footer img {
 
 .footer-info a {
   color: inherit;
+
   text-decoration: none;
 }
 
@@ -381,68 +528,101 @@ footer img {
   text-decoration: underline;
 }
 
-/* Social media */
 .socials p {
   display: flex;
+
   align-items: center;
+
   gap: 10px;
+
   margin: 5px 0;
 }
 
 .socials img {
   width: 32px;
+
   height: 32px;
+
   object-fit: contain;
 }
 
-/* Cookies-knop */
 .cookie-knop {
   position: absolute;
+
   right: 20px;
+
   bottom: 20px;
 
   background-color: var(--titels);
+
   color: var(--color);
+
   border: none;
+
   border-radius: 20px;
+
   padding: 10px 20px;
+
   font-family: inherit;
+
   cursor: pointer;
 }
 
 .cookie-knop:hover {
   transform: scale(1.05);
 }
+
 /* aboutme.html */
+
 .tijdlijn {
   position: relative;
+
   max-width: 1000px;
+
   margin: 50px auto;
+
   padding: 40px 0;
 }
 
 .tijdlijn::before {
   content: "";
+
   position: absolute;
+
   left: 50%;
+
   top: 0;
+
   bottom: 0;
+
   width: 4px;
-  background-color: #ddd;
+
+  background-color: var(--achtergrond);
+
   transform: translateX(-50%);
 }
-
+/* bron: "bijles" frond-end developer I-aspect*/
 .tijdlijn::after {
   content: "";
+
   position: absolute;
+
   left: 50%;
+
   top: 0;
+
   width: 4px;
+
   height: 100%;
+
   background-color: var(--header);
+
   transform: translateX(-50%) scaleY(0);
+
   transform-origin: top;
+
   animation: lijn-vullen linear forwards;
+
   animation-timeline: scroll(root);
 }
 
@@ -454,30 +634,45 @@ footer img {
 
 .moment {
   position: relative;
+
   width: 50%;
+
   margin: 100px 0;
+
   padding: 0 40px;
 }
 
 .moment:nth-child(odd) {
   margin-right: auto;
+
   text-align: right;
 }
 
 .moment:nth-child(even) {
   margin-left: 50%;
+
   text-align: left;
 }
+
 .moment::before {
   content: "";
+
   position: absolute;
+
   top: 8px;
+
   width: 18px;
+
   height: 18px;
+
   border-radius: 50%;
+
   background-color: var(--koptekst);
+
   border: 3px solid var(--header);
+
   z-index: 2;
+
   box-sizing: content-box;
 }
 
@@ -491,19 +686,24 @@ footer img {
 
 .tijdlijn-tekst {
   background-color: var(--achtergrond);
-  border: 5px solid var(--koptekst);
+
+  border: 5px solid var(--geel);
+
   border-radius: 12px;
+
   padding: 20px;
 }
 
 .tijdlijn-tekst h3 {
   color: var(--header);
+
   margin-top: 0;
 }
 
 @media (max-width: 600px) {
   .tijdlijn {
     margin: 30px 15px;
+
     padding: 20px 0;
   }
 
@@ -516,23 +716,33 @@ footer img {
   .moment:nth-child(odd),
   .moment:nth-child(even) {
     width: 100%;
+
     margin: 60px 0;
+
     padding-left: 50px;
+
     padding-right: 0;
+
     text-align: left;
   }
 
   .moment:nth-child(odd)::before,
   .moment:nth-child(even)::before {
     left: 3px;
+
     right: auto;
   }
 }
+
 .moment:nth-child(odd) .tijdlijn-tekst {
   display: flex;
+
   flex-direction: row-reverse;
+
   align-items: center;
+
   justify-content: space-between;
+
   gap: 20px;
 }
 
@@ -546,91 +756,97 @@ footer img {
 
 .aboutme {
   border-radius: 10px;
+
   border: 5px solid var(--geel);
 }
+
 .omhoog {
   display: block;
+
   width: fit-content;
+
   margin: 50px auto 30px;
+
   padding: 10px 18px;
-  background-color: var(--koptekst);
-  color: var(--header);
+
+  background-color: var(--header);
+
+  color: var(--achtergrond);
+
   text-decoration: none;
+
   border-radius: 50%;
+
   font-size: 1.5rem;
 }
 
 .omhoog:hover {
   transform: scale(1.1);
 }
-html {
-  scroll-behavior: smooth;
-}
+
 /* films.html */
+
 .films-header {
   position: relative;
+
   min-height: 15vh;
+
   padding: var(--whitespace-m);
+
   background-color: var(--achtergrond);
+
   display: flex;
+
   align-items: center;
+
   justify-content: center;
 }
 
 .films-header h1 {
   margin: 0;
+
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+
   font-size: var(--step-4);
+
   color: var(--titels);
+
   text-align: center;
 }
+
 .film-header nav {
   right: 2%;
 }
 
-.knoppenreizen {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: var(--whitespace-s);
-  width: 100%;
-  box-sizing: border-box;
-  padding: var(--whitespace-m);
-}
-
-.knoppenreizen a {
-  color: var(--header);
-  background-color: var(--koptekst);
-  padding: 0.5em 1em;
-  border-radius: 10px;
-  text-decoration: none;
-  transition: 0.2s ease;
-}
-
-.knoppenreizen a:hover {
-  background-color: var(--titels);
-  color: var(--achtergrond);
-  transform: translateY(-3px);
-}
 article nav {
   display: flex;
+
   justify-content: flex-start;
+
   margin-bottom: var(--whitespace-m);
 }
 
 .filmtekst {
   border: 10px solid var(--geel);
-  background-color: var(--koptekst);
+
+  background-color: var(--achtergrond);
+
   width: 80vw;
+
   max-width: 800px;
-  min-height: 40vh;
+
+  min-height: 50vh;
 
   margin: var(--whitespace-l) auto;
+
   padding: var(--whitespace-m);
 
   display: flex;
+
   flex-direction: column;
+
   justify-content: center;
+
   align-items: center;
 
   box-sizing: border-box;
@@ -638,6 +854,7 @@ article nav {
 
 .filmtekst img {
   width: 40%;
+
   height: auto;
 }
 
@@ -647,12 +864,17 @@ article nav {
 
 .genre-knoppen {
   display: flex;
+
   justify-content: center;
+
   gap: var(--whitespace-m);
+
   flex-wrap: wrap;
 }
+
 .genre-knoppen a {
   color: var(--header);
+
   font-size: var(--step-0);
 }
 
@@ -660,10 +882,13 @@ article nav {
   position: fixed;
 
   bottom: -30px;
+
   left: 0;
 
   width: 100vw;
+
   max-width: none;
+
   height: auto;
 
   z-index: 10;
@@ -673,22 +898,31 @@ article nav {
 
 .hauntingoffhillhouse {
   max-width: 400px;
+
   min-height: 10vh;
 
   width: 100%;
+
   height: auto;
 }
+
 .film-detail {
   border: 10px solid var(--geel);
 
   width: 80%;
+
+  background-color: var(--achtergrond);
+
   max-width: 800px;
+
   min-height: 40vh;
 
   margin: var(--whitespace-xl) auto;
+
   padding: var(--whitespace-m);
 
   display: grid;
+
   grid-template-columns: 40% 45%;
 
   gap: var(--whitespace-l);
@@ -701,42 +935,31 @@ article nav {
 header .reizen-nav a {
   color: var(--header);
 }
+
 .terug-nav {
   position: absolute;
+
   top: 90px;
+
   left: 2%;
 }
 
 .terug-nav a {
   color: var(--header);
 }
-
-/* reizen.html */
-.reizen-header {
-  position: relative;
-  min-height: 15vh;
-  padding: var(--whitespace-m);
-  background-color: var(--koptekst);
-  display: flex;
+.Terug {
+  margin-left: 30px;
+}
+.Terug a {
   color: var(--header);
-  align-items: center;
-  justify-content: center;
 }
-
-.reizen-pagina {
-  background-color: var(--koptekst);
-}
-
 .reizen-pagina main {
   position: relative;
   width: 100%;
   height: 70vh;
   margin-top: 1rem;
 }
-.reizen-header h1 {
-  color: var(--header);
-  font-size: var(--step-4);
-}
+
 #envelop-open {
   display: none;
 }
@@ -745,15 +968,12 @@ header .reizen-nav a {
 .envelop-achter,
 .envelop-voor {
   position: absolute;
-
   width: min(600px, 90vw);
-
   left: 50%;
   top: 50%;
-
   transform: translate(-50%, -50%);
-
   max-width: none;
+  transition: opacity 0.4s ease;
 }
 
 .eerste-envelop {
@@ -766,101 +986,82 @@ header .reizen-nav a {
 }
 
 .envelop-voor {
-  z-index: 2;
+  z-index: 5;
   opacity: 0;
   top: 464px;
 }
 
 .zegel {
   position: absolute;
-
   width: 120px;
-
   left: 50%;
   top: 59%;
-
   transform: translate(-50%, -50%);
-
   z-index: 10;
-
   cursor: pointer;
+  transition: opacity 0.4s ease;
 }
 
 .zegel img {
   width: 100%;
   margin: 0;
-
   transition: transform 0.2s ease;
 }
 
 .zegel:hover img {
   transform: scale(1.1);
 }
-
-#envelop-open:checked ~ .eerste-envelop {
-  opacity: 0;
-}
-
+/* bron: "bijles" frond-end developer I-aspect*/
+#envelop-open:checked ~ .eerste-envelop,
 #envelop-open:checked ~ .zegel {
   opacity: 0;
   pointer-events: none;
 }
 
-#envelop-open:checked ~ .envelop-achter {
-  opacity: 1;
-}
-
+#envelop-open:checked ~ .envelop-achter,
 #envelop-open:checked ~ .envelop-voor {
   opacity: 1;
 }
 
 .kaartjes a {
   position: absolute;
-
   left: 50%;
   top: 50%;
-
   width: 180px;
   height: auto;
-
   margin: 0;
   padding: 0;
-
-  z-index: 4;
-
+  z-index: 6;
   pointer-events: auto;
 }
 
 .kaartjes a img {
   width: 100%;
   max-width: none;
-
   margin: 0;
-
   opacity: 0;
-
   transform: translate(-50%, 100px) rotate(0deg);
-
   transition:
     transform 0.8s ease,
-    opacity 0.4s ease;
+    opacity 0.4s ease,
+    scale 0.2s ease;
 }
-
+/* bron: "bijles" frond-end developer I-aspect*/
 #envelop-open:checked ~ .kaartjes a:nth-child(1) img {
   opacity: 1;
-  transform: translate(-400px, -0px) rotate(-18deg);
+  transform: translate(-400px, 0px) rotate(-18deg);
   transition-delay: 0.1s;
 }
 
 #envelop-open:checked ~ .kaartjes a:nth-child(2) img {
   opacity: 1;
-  transform: translate(-250px, -100px) rotate(-8deg);
+  transform: translate(-350px, -100px) rotate(-8deg);
   transition-delay: 0.2s;
 }
 
 #envelop-open:checked ~ .kaartjes a:nth-child(3) img {
   opacity: 1;
-  transform: translate(-130px, -180px) rotate(2deg);
+  transform: translate(-190px, -200px) rotate(2deg);
   transition-delay: 0.3s;
 }
 
@@ -888,13 +1089,6 @@ header .reizen-nav a {
   width: 280px;
 }
 
-.kaartjes a img {
-  transition:
-    transform 0.8s ease,
-    opacity 0.4s ease,
-    scale 0.2s ease;
-}
-
 .kaartjes a img:hover {
   scale: 1.08;
   cursor: pointer;
@@ -905,16 +1099,12 @@ header .reizen-nav a {
     width: 125px;
   }
 
-  .kaartjes a img {
-    width: 100%;
-  }
-
   .kaartjes a:nth-child(1) img,
   .kaartjes a:nth-child(2) img,
   .kaartjes a:nth-child(3) img {
     width: 140%;
   }
-
+  /* bron: "bijles" frond-end developer I-aspect*/
   #envelop-open:checked ~ .kaartjes a:nth-child(1) img {
     transform: translate(-230px, -20px) rotate(-18deg);
   }
@@ -939,53 +1129,40 @@ header .reizen-nav a {
     transform: translate(105px, -20px) rotate(22deg);
   }
 }
-
 /* MOBIEL */
 
 @media (max-width: 600px) {
-  /* HEADER */
-
-  /* HAMBURGER */
-
   .hamburger {
     display: block;
+
     margin-left: auto;
   }
-
-  /* NAVIGATIE VERBORGEN */
 
   header nav {
     display: none;
 
-    position: absolute;
-
-    top: 100%;
-    right: 1rem;
-
     flex-direction: column;
+
     gap: 0.5rem;
 
     padding: 1rem;
 
-    background-color: var(--header);
+    background-color: var(--achtergrond);
+
+    border-radius: 10px;
 
     z-index: 20;
   }
 
-  /* MENU OPEN */
-
-  #menu-toggle:checked ~ nav {
+  \#menu-toggle:checked \~ nav {
     display: flex;
   }
-
-  /* ZON EN MAAN */
 
   header form {
     display: flex;
+
     gap: 0.3rem;
   }
-
-  /* FILM DETAIL */
 
   .film-detail {
     width: 90%;
@@ -999,33 +1176,30 @@ header .reizen-nav a {
 
   .film-detail img {
     width: 70%;
+
     max-width: 300px;
+
     margin: auto;
   }
 
   .film-info {
     width: 100%;
+
     text-align: center;
   }
 }
 
 .zakyntos {
   background-color: var(--koptekst);
-  color: var(--titels);
-}
-.postcard-tekst {
-  padding: 0px 30px 30px;
-  text-align: left;
-}
 
-.postcard-tekst h2 {
-  margin-bottom: 25px;
-  font-size: 1.8rem;
+  color: var(--titels);
 }
 
 .informatie h3 {
   margin-top: 20px;
+
   margin-bottom: 5px;
+
   font-size: 1rem;
 }
 
@@ -1035,93 +1209,128 @@ header .reizen-nav a {
 
 .informatie a {
   color: var(--titels);
+
   text-decoration: underline;
 }
 
 .informatie a:hover {
   opacity: 0.7;
 }
+
 .reizen-pagina {
   background-color: var(--koptekst);
 }
+.reizen-header {
+  justify-content: center;
+}
 .zakyntos main {
   min-height: 70vh;
+
   display: flex;
+
   justify-content: center;
+
   align-items: center;
 }
 
 .postcard {
   position: relative;
-  width: 80%;
-  max-width: 800px;
-  margin-top: 10%;
+  width: 800px;
+  height: 500px;
+  max-width: 90%;
+  margin: 2% auto 0;
+  padding: 35px;
+  box-sizing: border-box;
+  background-color: var(--achtergrond);
 }
 
-.postcard-container {
-  position: relative;
-  width: 80%;
-  max-width: 800px;
-  margin-top: 10%;
-}
-
-.postcard-container .postcard {
-  width: 100%;
-  display: block;
-  margin: 0;
-}
-
-.zante {
-  position: absolute;
-  width: 39%;
-  height: auto;
-  top: 8%;
-  left: 56%;
-  border-radius: 8%;
-}
 .postcard-tekst {
-  position: absolute;
-  top: 15%;
-  left: 8%;
-  width: 43%;
-  color: var(--titels);
-}
-
-.postcard-tekst h2 {
-  font-size: 2rem;
-  text-align: left;
-}
-
-.postcard-tekst p {
-  color: black;
-  text-align: left;
-}
-
-/* Alle paginaheaders krijgen dezelfde hoogte */
-header,
-header.films-header,
-header.reizen-header {
-  position: relative;
-  height: 180px;
-  min-height: 180px;
+  width: 100%;
+  height: 100%;
   box-sizing: border-box;
 }
 
-/* Navigatie staat op elke pagina verticaal in het midden */
-header nav {
-  position: absolute;
-  top: 50%;
-  right: 2%;
-  transform: translateY(-50%);
+.postcard-tekst h1 {
+  color: var(--header);
+  margin-top: 0;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
-/* De titel mag de header niet hoger maken */
-/* Op mobiel krijgen alle headers dezelfde hoogte */
+.postcard-tekst a {
+  color: var(--titels);
+}
+
+.postcard-inhoud {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.postcard-info {
+  min-width: 0;
+  padding-right: 25px;
+  border-right: 2px solid var(--kleur);
+}
+
+.postcard-foto img {
+  display: block;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  transform: translate(-30px, -20px);
+}
+
+/* Mobiele versie */
 @media (max-width: 600px) {
-  header,
-  header.films-header,
-  header.reizen-header {
-    height: 100px;
-    min-height: 100px;
+  .postcard {
+    width: 92%;
+    height: auto;
+    min-height: 500px;
+    padding: 20px;
+    margin: 5% auto;
+  }
+
+  .postcard-tekst {
+    height: auto;
+  }
+
+  .postcard-tekst h1 {
+    font-size: 1.5rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+
+  .postcard-inhoud {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 15px;
+  }
+
+  .postcard-info {
+    padding-right: 12px;
+  }
+
+  .postcard-info h3 {
+    font-size: 0.85rem;
+    overflow-wrap: break-word;
+  }
+
+  .postcard-info p,
+  .postcard-info a {
+    font-size: 0.8rem;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+  }
+
+  .postcard-foto {
+    display: flex;
+    align-items: flex-start;
+    padding: 0;
+  }
+
+  .postcard-foto img {
+    width: 100%;
+    height: 260px;
+    max-width: none;
+    transform: translate(0, 0);
   }
 }

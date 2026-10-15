@@ -20,33 +20,40 @@
 
   <body>
     <div id="top"></div>
-    <header class="films-header">
-      <h1>ABOUT ME</h1>
+    <header>
+      <h1>OVER MIJ</h1>
       <input type="checkbox" id="menu-toggle" />
 
       <label for="menu-toggle" class="hamburger">☰</label>
-      <nav class="reizen-nav">
-        <a href="index.html">Home</a>
-        <a href="aboutme.html">Over mij</a>
-        <a href="films.html">Films</a>
-        <a href="travel.html">Reizen</a>
-      </nav>
-      <form>
-        <label for="light-mode">
-          <input
-            type="radio"
-            id="light-mode"
-            name="color-theme"
-            value="light"
-          />
-          ☀️
-        </label>
+      <div class="navigatie">
+        <form>
+          <label for="light-mode">
+            <input
+              type="radio"
+              id="light-mode"
+              name="color-theme"
+              value="light"
+            />
+            ☀️
+          </label>
 
-        <label for="dark-mode">
-          <input type="radio" id="dark-mode" name="color-theme" value="dark" />
-          🌙
-        </label>
-      </form>
+          <label for="dark-mode">
+            <input
+              type="radio"
+              id="dark-mode"
+              name="color-theme"
+              value="dark"
+            />
+            🌙
+          </label>
+        </form>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="aboutme.html">Over mij</a>
+          <a href="films.html">Films</a>
+          <a href="travel.html">Reizen</a>
+        </nav>
+      </div>
     </header>
 
     <main>
