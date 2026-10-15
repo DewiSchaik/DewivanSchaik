@@ -389,6 +389,52 @@ textarea {
 
   margin: 0 auto;
 }
+.wereldkaart-container {
+  position: relative;
+  width: 100%;
+}
+
+.wereldkaart {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.punaise {
+  position: absolute;
+  font-size: 2rem;
+  text-decoration: none;
+  transform: translate(-50%, -50%);
+  transition: transform 0.2s ease;
+  z-index: 2;
+}
+
+.punaise:hover {
+  transform: translate(-50%, -50%) scale(1.4);
+}
+
+/* Posities van de bestemmingen */
+.sicilie {
+  left: 53%;
+  top: 38%;
+}
+
+.zakyntos {
+  left: 55%;
+  top: 40%;
+}
+
+.bali {
+  left: 77%;
+  top: 63%;
+}
+
+/* Punaises iets kleiner op mobiel */
+@media (max-width: 600px) {
+  .punaise {
+    font-size: 1.4rem;
+  }
+}
 
 .cookie-popup {
   position: fixed;
@@ -936,17 +982,6 @@ header .reizen-nav a {
   color: var(--header);
 }
 
-.terug-nav {
-  position: absolute;
-
-  top: 90px;
-
-  left: 2%;
-}
-
-.terug-nav a {
-  color: var(--header);
-}
 .Terug {
   margin-left: 30px;
 }
@@ -1187,12 +1222,6 @@ header .reizen-nav a {
 
     text-align: center;
   }
-}
-
-.zakyntos {
-  background-color: var(--koptekst);
-
-  color: var(--titels);
 }
 
 .informatie h3 {
