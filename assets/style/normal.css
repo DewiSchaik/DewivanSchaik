@@ -1291,8 +1291,10 @@ header .reizen-nav a {
   box-sizing: border-box;
 }
 
-.postcard-tekst h1 {
-  color: var(--header);
+.postcard-tekst h2 {
+  font-size: 2rem;
+  text-align: left;
+  color: var(--roze);
   margin-top: 0;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
