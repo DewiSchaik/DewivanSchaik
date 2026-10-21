@@ -33,16 +33,11 @@ html {
 html:has([value="dark"]:checked) {
   color-scheme: dark;
 
-  --achtergrond: #a69a89;
-
+  --achtergrond: #813222;
   --kleur: #fff8ee;
-
   --koptekst: #e4bce4;
-
-  --header: #813222;
-
+  --header: #;
   --titels: #813222;
-
   --geel: #b57f1b;
 }
 
@@ -185,6 +180,7 @@ header form input {
 #menu-toggle {
   display: none;
 }
+
 .over-mij-content {
   display: flex;
 
@@ -220,7 +216,11 @@ header form input {
 
   line-height: 1.6;
 }
+.tijdlijn-jaartal {
+  font-weight: bold;
 
+  color: #fd9651;
+}
 @media (max-width: 787px) {
   .over-mij-content p {
     font-size: 18px;
@@ -250,6 +250,11 @@ img {
   margin-block-start: var(--whitespace-m);
 }
 
+@media (max-width: 600px) {
+  img {
+    width: 30%;
+  }
+}
 .kronkel {
   width: 100vw;
 
@@ -391,21 +396,29 @@ textarea {
 }
 .wereldkaart-container {
   position: relative;
+
   width: 100%;
 }
 
 .wereldkaart {
   display: block;
+
   width: 100%;
+
   height: auto;
 }
 
 .punaise {
   position: absolute;
+
   font-size: 2rem;
+
   text-decoration: none;
+
   transform: translate(-50%, -50%);
+
   transition: transform 0.2s ease;
+
   z-index: 2;
 }
 
@@ -963,7 +976,7 @@ article nav {
 
   min-height: 40vh;
 
-  margin: var(--whitespace-xl) auto;
+  margin: var(--whitespace-xs) auto;
 
   padding: var(--whitespace-m);
 
