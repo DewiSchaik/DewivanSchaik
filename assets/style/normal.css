@@ -233,13 +233,16 @@ header form input {
 
     gap: 20px;
   }
+}
+@media (max-width: 600px) {
+  .over-mij-content img {
+    width: 50%;
+  }
 
-  .over-mij-content img,
   .over-mij-content p {
     width: 100%;
   }
 }
-
 img {
   width: 70%;
 
@@ -250,11 +253,6 @@ img {
   margin-block-start: var(--whitespace-m);
 }
 
-@media (max-width: 600px) {
-  img {
-    width: 30%;
-  }
-}
 .kronkel {
   width: 100vw;
 
