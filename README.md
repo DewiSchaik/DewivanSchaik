@@ -249,6 +249,7 @@ Oefening 3 - Responsive webshop
 ### Responsive grid + Grid-areas
 
 Oefening 1 - Een grid met Grid area maken
+
 [grid area](https://codepen.io/editor/dewi-schaik/pen/01a10c04-26f6-77ed-adf3-c366acbe0b15)
 
 </details>
@@ -258,7 +259,31 @@ Oefening 1 - Een grid met Grid area maken
 
 ### Buttons, states en selectors
 
+oefening 1 - Basic button states
+
+[button states](https://codepen.io/editor/dewi-schaik/pen/01a1633e-542c-739a-9d66-7dab64d81486)
+
+oefening 2 - Details en summary
+
+[Details en summary](https://codepen.io/editor/dewi-schaik/pen/01a16346-5609-728d-adfc-7b47e41c617f)
+
 ### Buttons + Dialogs
+
+Oefening 1 - Buttons 101 stap 1 t/m 6
+
+[Buttons 101](https://codepen.io/editor/dewi-schaik/pen/01a16353-b336-7255-91c8-c487633cc229)
+
+Oefening 2 - Swapping buttons
+
+[Swapping buttons](https://codepen.io/editor/dewi-schaik/pen/01a16358-cccd-761b-bbf9-d9433da785bc)
+
+Oefening 3 - Fancy buttons
+
+[Fancy buttons](https://codepen.io/editor/dewi-schaik/pen/01a1635e-25d7-7157-a431-05a3c37da260)
+
+Oefening 4 - Dialog 101
+
+[Dialog](https://codepen.io/editor/dewi-schaik/pen/01a16366-6268-74ef-822e-638be57fc1a5)
 
 ### Position + Dialogs
 

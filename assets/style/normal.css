@@ -3,12 +3,10 @@
 
   src: url("../type/impact.ttf");
 }
-
+/* bron: deepdive sprint 1 Intro custom properties, Intro light en dark themes*/
 html {
   color-scheme: light;
   scroll-behavior: smooth;
-
-  /* KLEUREN */
 
   --achtergrond: #fff8ee;
   --kleur: #000000;
@@ -41,14 +39,13 @@ html:has([value="dark"]:checked) {
   --geel: #b57f1b;
   --roze: #f7d9f7;
 }
-
+/* bron: https://www.w3schools.com/tools/tool_css_filter.php */
 html:has([value="dark"]:checked) .wereldkaart,
 html:has([value="dark"]:checked) .kronkel {
   filter: brightness(0.8);
 }
 
 /* index.html */
-
 main {
   margin-top: 0;
 }
@@ -106,7 +103,7 @@ header h1 {
 
   text-align: left;
 }
-
+/* bron: https://www.w3schools.com/tools/tool_css_transform.php? (dit geld voor alle transforms)*/
 header nav {
   transform: translateY(-50%);
 
@@ -133,8 +130,6 @@ header form label {
   font-size: 1.5rem;
 
   display: inline-block;
-
-  transition: transform 0.2s ease;
 }
 
 header form label:hover {
@@ -1002,8 +997,11 @@ header .reizen-nav a {
 }
 .reizen-pagina main {
   position: relative;
+
   width: 100%;
+
   height: 70vh;
+
   margin-top: 1rem;
 }
 
@@ -1015,11 +1013,17 @@ header .reizen-nav a {
 .envelop-achter,
 .envelop-voor {
   position: absolute;
+
   width: min(600px, 90vw);
+
   left: 50%;
+
   top: 50%;
+
   transform: translate(-50%, -50%);
+
   max-width: none;
+
   transition: opacity 0.4s ease;
 }
 
@@ -1029,29 +1033,41 @@ header .reizen-nav a {
 
 .envelop-achter {
   z-index: 1;
+
   opacity: 0;
 }
 
 .envelop-voor {
   z-index: 5;
+
   opacity: 0;
+
   top: 464px;
 }
 
 .zegel {
   position: absolute;
+
   width: 120px;
+
   left: 50%;
+
   top: 59%;
+
   transform: translate(-50%, -50%);
+
   z-index: 10;
+
   cursor: pointer;
+
   transition: opacity 0.4s ease;
 }
 
 .zegel img {
   width: 100%;
+
   margin: 0;
+
   transition: transform 0.2s ease;
 }
 
@@ -1072,64 +1088,87 @@ header .reizen-nav a {
 
 .kaartjes a {
   position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 180px;
-  height: auto;
-  margin: 0;
-  padding: 0;
-  z-index: 6;
-  pointer-events: auto;
-}
 
+  left: 50%;
+
+  top: 50%;
+
+  width: 180px;
+
+  height: auto;
+
+  margin: 0;
+
+  padding: 0;
+
+  z-index: 6;
+}
+/* polariods*/
 .kaartjes a img {
   width: 100%;
+
   max-width: none;
+
   margin: 0;
+
   opacity: 0;
-  transform: translate(-50%, 100px) rotate(0deg);
+
+  transform: translate(-50%, 100px);
+
   transition:
     transform 0.8s ease,
     opacity 0.4s ease,
     scale 0.2s ease;
 }
-/* bron: "bijles" frond-end developer I-aspect*/
+/* bron: "bijles" progameur I-aspect+ https://www.w3schools.com/cssref/css3_pr_transition-delay.php*/
 #envelop-open:checked ~ .kaartjes a:nth-child(1) img {
   opacity: 1;
+
   transform: translate(-400px, 0px) rotate(-18deg);
+
   transition-delay: 0.1s;
 }
 
 #envelop-open:checked ~ .kaartjes a:nth-child(2) img {
   opacity: 1;
+
   transform: translate(-350px, -100px) rotate(-8deg);
+
   transition-delay: 0.2s;
 }
 
 #envelop-open:checked ~ .kaartjes a:nth-child(3) img {
   opacity: 1;
+
   transform: translate(-190px, -200px) rotate(2deg);
+
   transition-delay: 0.3s;
 }
 
 #envelop-open:checked ~ .kaartjes a:nth-child(4) img {
   opacity: 1;
+
   transform: translate(50px, -220px) rotate(8deg);
+
   transition-delay: 0.4s;
 }
 
 #envelop-open:checked ~ .kaartjes a:nth-child(5) img {
   opacity: 1;
+
   transform: translate(150px, -150px) rotate(15deg);
+
   transition-delay: 0.5s;
 }
 
 #envelop-open:checked ~ .kaartjes a:nth-child(6) img {
   opacity: 1;
+
   transform: translate(230px, -60px) rotate(22deg);
+
   transition-delay: 0.6s;
 }
-
+/* tickets*/
 .kaartjes a:nth-child(1) img,
 .kaartjes a:nth-child(2) img,
 .kaartjes a:nth-child(3) img {
@@ -1138,6 +1177,7 @@ header .reizen-nav a {
 
 .kaartjes a img:hover {
   scale: 1.08;
+
   cursor: pointer;
 }
 
@@ -1145,7 +1185,7 @@ header .reizen-nav a {
   .kaartjes a {
     width: 125px;
   }
-
+  /* Maakt de afbeeldingen van de eerste drie kaartjes 140% breed. */
   .kaartjes a:nth-child(1) img,
   .kaartjes a:nth-child(2) img,
   .kaartjes a:nth-child(3) img {
@@ -1176,7 +1216,6 @@ header .reizen-nav a {
     transform: translate(105px, -20px) rotate(22deg);
   }
 }
-/* MOBIEL */
 
 @media (max-width: 600px) {
   .hamburger {
@@ -1276,26 +1315,39 @@ header .reizen-nav a {
 
 .postcard {
   position: relative;
+
   width: 800px;
+
   height: 500px;
+
   max-width: 90%;
+
   margin: 2% auto 0;
+
   padding: 35px;
+
   box-sizing: border-box;
+
   background-color: var(--achtergrond);
 }
 
 .postcard-tekst {
   width: 100%;
+
   height: 100%;
+
   box-sizing: border-box;
 }
 
 .postcard-tekst h2 {
   font-size: 2rem;
+
   text-align: left;
+
   color: var(--roze);
+
   margin-top: 0;
+
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
@@ -1305,21 +1357,29 @@ header .reizen-nav a {
 
 .postcard-inhoud {
   display: grid;
+
   grid-template-columns: 1fr 1fr;
+
   gap: 30px;
 }
 
 .postcard-info {
   min-width: 0;
+
   padding-right: 25px;
+
   border-right: 2px solid var(--kleur);
 }
 
 .postcard-foto img {
   display: block;
+
   height: 300px;
+  /* bron: https://www.w3schools.com/css/css3_object-fit.asp*/
   object-fit: cover;
+
   border-radius: 8px;
+
   transform: translate(-30px, -20px);
 }
 
@@ -1327,8 +1387,11 @@ header .reizen-nav a {
 @media (max-width: 600px) {
   .postcard {
     width: 92%;
+
     height: auto;
+
     padding: 20px;
+
     margin: 5% auto;
   }
 
@@ -1338,12 +1401,15 @@ header .reizen-nav a {
 
   .postcard-tekst h1 {
     font-size: 1.5rem;
+
     line-height: 1.2;
+
     margin-bottom: 20px;
   }
 
   .postcard-inhoud {
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+
     gap: 15px;
   }
 
@@ -1353,26 +1419,33 @@ header .reizen-nav a {
 
   .postcard-info h3 {
     font-size: 0.85rem;
+
     overflow-wrap: break-word;
   }
 
   .postcard-info p,
   .postcard-info a {
     font-size: 0.8rem;
+
     line-height: 1.5;
+
     overflow-wrap: anywhere;
   }
 
   .postcard-foto {
     display: flex;
+
     align-items: flex-start;
     padding: 0;
   }
 
   .postcard-foto img {
     width: 100%;
+
     height: 260px;
+
     max-width: none;
+
     transform: translate(0, 0);
   }
 }
