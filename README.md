@@ -20,6 +20,14 @@ Het staat model voor digitale tuintjes welke bij 'Het web is voor iedereen' door
 2. alleen met toetsenbord lastiger want ik weet nog alle knopjes.
 3. kleurenblind, het constrast bij dark mode is nog niet goed
 
+### User testing en A11Y wo 30 sep
+
+1. Screenreader
+   Het testen van mijn website met een screenreader is goed gelukt. De screenreader kon de tekst en afbeeldingen voorlezen, waardoor mijn website ook zonder het scherm te zien te gebruiken is.
+2. Het testen van mijn website met alleen het toetsenbord is goed gelukt. Met de Tab-toets kon ik door de verschillende onderdelen navigeren en met Enter kon ik links openen.
+3. wcag checklist
+   ![wcagchecklist](assets/afbeeldingen/wcagchecklist.png)
+
 ### checkout vr 18 sep
 
 Github is een platform waar je een start kan maken aan het ontwerpen van je eigen website zo koppel je het met code
