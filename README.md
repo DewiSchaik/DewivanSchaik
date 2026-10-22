@@ -27,6 +27,7 @@ Het staat model voor digitale tuintjes welke bij 'Het web is voor iedereen' door
 2. Het testen van mijn website met alleen het toetsenbord is goed gelukt. Met de Tab-toets kon ik door de verschillende onderdelen navigeren en met Enter kon ik links openen.
 3. wcag checklist
    ![wcagchecklist](assets/afbeeldingen/wcagchecklist.png)
+   <img src="wcagchecklist.png" width="300">
 
 ### checkout vr 18 sep
 
