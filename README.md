@@ -273,21 +273,36 @@ Oefening 1 - Buttons 101 stap 1 t/m 6
 
 [Buttons 101](https://codepen.io/editor/dewi-schaik/pen/01a16353-b336-7255-91c8-c487633cc229)
 
-Oefening 2 - Swapping buttons
+Oefening 2 - Swapping buttons stap 1 t/m 5
 
 [Swapping buttons](https://codepen.io/editor/dewi-schaik/pen/01a16358-cccd-761b-bbf9-d9433da785bc)
 
-Oefening 3 - Fancy buttons
+Oefening 3 - Fancy buttons stap 1 t/m 5
 
 [Fancy buttons](https://codepen.io/editor/dewi-schaik/pen/01a1635e-25d7-7157-a431-05a3c37da260)
 
-Oefening 4 - Dialog 101
+Oefening 4 - Dialog 101 stap 1 t/m 5
 
 [Dialog](https://codepen.io/editor/dewi-schaik/pen/01a16366-6268-74ef-822e-638be57fc1a5)
 
+Oefening 5 - Dialog met fancy buttons stap 1 t/m 8
+
+[Dialog met fancy buttons](https://codepen.io/editor/dewi-schaik/pen/01a16370-b184-758e-a0dc-027d204f310c)
+
 ### Position + Dialogs
 
+Oefening 1 - Dingen op plekken zetten stap 1 t/m 10
+[dingen op plekken zetten](https://codepen.io/editor/dewi-schaik/pen/01a16378-7a27-71d9-8f59-8b5a3ce82364)
+
 ### Meer interactie met HTML en CSS
+
+Oefening 2 - Modal en modeless stap 1 t/m 4
+
+[Modal en modeless](https://codepen.io/editor/dewi-schaik/pen/01a1637d-5318-7375-8d64-94e1dccae2c5)
+
+Oefening 3 - dialogs animeren stap 1 t/m 2
+
+[dialogs animeren](https://codepen.io/editor/dewi-schaik/pen/01a16385-4e36-75cf-8826-046e1bcb5a85)
 
 </details>
 <details>
