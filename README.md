@@ -292,6 +292,7 @@ Oefening 5 - Dialog met fancy buttons stap 1 t/m 8
 ### Position + Dialogs
 
 Oefening 1 - Dingen op plekken zetten stap 1 t/m 10
+
 [dingen op plekken zetten](https://codepen.io/editor/dewi-schaik/pen/01a16378-7a27-71d9-8f59-8b5a3ce82364)
 
 ### Meer interactie met HTML en CSS
