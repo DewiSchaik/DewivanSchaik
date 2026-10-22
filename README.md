@@ -8,6 +8,71 @@ Het staat model voor digitale tuintjes welke bij 'Het web is voor iedereen' door
 
 [→ Bekijk mijn Figma prototype](https://www.figma.com/proto/L98T9tQbsGSxDZJv4JnHM7/Untitled?node-id=0-1&t=rlDX8zHQZQj9krfK-1)
 
+### checkout wo 17 okt
+
+1. Ontwerper: Een grid helpt om onderdelen netjes uit te lijnen. Bezoeker: De website wordt overzichtelijker en makkelijker te lezen.
+
+2. Door een duidelijke hiërarchie te gebruiken, genoeg witruimte te laten en kleuren en lettertypes te beperken.
+
+3. Genoeg om je ontwerp opvallend en creatief te maken, maar niet zoveel dat het onoverzichtelijk wordt.
+
+### Hiërarchie en Grid wo 7 okt
+
+![songtext](assets/afbeeldingen/songtext.png)
+
+### checkout ma 5 okt
+
+1. Betekenis van de typografische termen
+
+- Kerning: De ruimte tussen twee specifieke letters aanpassen, zodat ze mooi bij elkaar passen.
+- Tracking: De ruimte tussen alle letters van een woord of tekst aanpassen.
+- Leading: De verticale afstand tussen de regels tekst. Dit bepaalt hoeveel ruimte er tussen de regels zit.
+- Flush-left: De tekst is links uitgelijnd en de rechterkant loopt ongelijk af.
+- Flush-right: De tekst is rechts uitgelijnd en de linkerkant loopt ongelijk af.
+- Centered: De tekst staat gecentreerd, waardoor de regels rondom het midden zijn uitgelijnd.
+- Justified: De tekst is zowel links als rechts uitgelijnd. De ruimte tussen woorden wordt aangepast om de regels even lang te maken.
+- Indent: De eerste regel van een alinea begint verder naar rechts dan de overige regels.
+- Outdent: Een regel of gedeelte van de tekst steekt juist verder naar links uit dan de rest van de tekst.
+- Modular scale: Een systeem waarbij je lettergroottes kiest op basis van een vaste verhouding. Hierdoor ontstaat een samenhangende typografische hiërarchie.
+- Movable type: Een druktechniek waarbij losse letters en tekens worden gebruikt om teksten samen te stellen en af te drukken.
+- Focus point: Het onderdeel van een ontwerp dat als eerste de aandacht van de kijker trekt.
+- Vijf soorten contrast: Contrast zorgt ervoor dat onderdelen van elkaar verschillen en bepaalde elementen meer opvallen. Vijf voorbeelden zijn:
+  Groottecontrast
+  leurcontrast
+  Gewichtscontrast
+  Vormcontrast
+  Ruimtecontrast
+
+2. Wat is jouw ideale regellengte (measure)? Leg uit waarom.
+   Mijn ideale regellengte is ongeveer 50 tot 75 tekens per regel. Dit leest prettig, omdat mijn ogen niet te ver heen en weer hoeven te bewegen. Ook kan ik de volgende regel makkelijk terugvinden, waardoor de tekst overzichtelijk blijft.
+3. Als je in een ontwerp maar één variabele tot je beschikking had om hiërarchie aan te brengen, welke zou je dan gebruiken en waarom?
+   Ik zou kiezen voor grootte. Door belangrijke woorden groter te maken dan de rest van de tekst, trekt mijn ontwerp direct de aandacht. Bij mijn YMCA-ontwerp kan ik bijvoorbeeld de letters YMCA heel groot maken en de overige songtekst kleiner houden. Zo ziet de kijker meteen wat het belangrijkste onderdeel is.
+
+### Sprintplanning + WS 1 ma 5 okt
+
+Opdracht 1: Songtekst analyseren
+
+Ik heb gekozen voor het nummer y.m.c.a
+![schetsen](assets/afbeeldingen/schetsen.jpg)
+
+Opdracht 2: Bespreek je schetsen met een ander
+
+1. Wat wil je bij de kijker bereiken met je vormgeving?
+
+Ik wil dat de kijker de vrolijke en energieke sfeer van het lied YMCA voelt. Door grote letters, felle kleuren en speelse vormen wil ik de aandacht trekken.
+
+2. Hoe voegt jouw opzet iets toe aan de tekst?
+
+Door af te wisselen met lettergroottes, plaatsing en ruimte ontstaat er ritme in de tekst. De woorden YMCA krijgen extra nadruk, waardoor het refrein meer opvalt en de tekst levendiger wordt.
+
+3. Wat is een volgende stap: welke schets vind je het meest geschikt om digitaal uit te werken?
+
+Ik vind de schets met de grote, opvallende letters YMCA het meest geschikt om digitaal uit te werken. Ik wil de tekst combineren met verschillende lettergroottes, kleuren en speelse vormen.
+
+4. Hoe zou je dit kunnen aanpakken in code?
+
+Ik kan HTML gebruiken om de tekst op de pagina te zetten en CSS om de vormgeving te maken. Met font-size, font-weight, line-height, letter-spacing en transform kan ik spelen met de grootte, ruimte en positie van de tekst. Ook kan ik met kleuren en animaties de vormgeving extra expressief maken.
+
 ### retrospect vr 2 okt
 
 ![retrospective](assets/afbeeldingen/IMG_9193.jpg)
@@ -27,7 +92,6 @@ Het staat model voor digitale tuintjes welke bij 'Het web is voor iedereen' door
 2. Het testen van mijn website met alleen het toetsenbord is goed gelukt. Met de Tab-toets kon ik door de verschillende onderdelen navigeren en met Enter kon ik links openen.
 3. wcag checklist
    ![wcagchecklist](assets/afbeeldingen/wcagchecklist.png)
-   <img src="wcagchecklist.png" width="300">
 
 ### checkout vr 18 sep
 
@@ -57,7 +121,9 @@ nog steeds bij mijzelf en mijn ontwerp past.
 
 ### retrospect vr 18 sep
 
-moet nog komen!
+![retrospect](assets/afbeeldingen/IMG_9556.jpg)
+![retrospect](assets/afbeeldingen/IMG_9555.jpg)
+![retrospect](assets/afbeeldingen/IMG_9554.jpg)
 
 ### checkout wo 16 sep
 
