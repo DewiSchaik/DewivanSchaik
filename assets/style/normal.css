@@ -161,8 +161,41 @@ header form input {
 }
 .navigatie a {
   color: var(--header);
+
+  text-decoration: none;
+
+  position: relative;
 }
 
+.navigatie a::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+
+  bottom: -5px;
+
+  width: 100%;
+
+  height: 4px;
+
+  background-color: var(--geel);
+
+  border-radius: 10px;
+
+  transform: scaleX(0);
+
+  transition: transform 0.3s ease;
+}
+
+.navigatie a:hover::after,
+.navigatie a:focus-visible::after {
+  transform: scaleX(1);
+}
+nav a[aria-current="page"]::after {
+  transform: scaleX(1);
+}
 .hamburger {
   display: none;
 
@@ -829,7 +862,7 @@ footer img {
 
   background-color: var(--header);
 
-  color: var(--achtergrond);
+  color: var(--geel);
 
   text-decoration: none;
 
@@ -999,6 +1032,37 @@ header .reizen-nav a {
 }
 .Terug a {
   color: var(--header);
+
+  text-decoration: none;
+
+  position: relative;
+}
+
+.Terug a::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+
+  bottom: -5px;
+
+  width: 100%;
+
+  height: 4px;
+
+  background-color: var(--geel);
+
+  border-radius: 10px;
+
+  transform: scaleX(0);
+
+  transition: transform 0.3s ease;
+}
+
+.Terug a:hover::after,
+.Terug a:focus-visible::after {
+  transform: scaleX(1);
 }
 .reizen-pagina main {
   position: relative;
