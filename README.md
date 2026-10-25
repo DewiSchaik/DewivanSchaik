@@ -86,7 +86,7 @@ Ik vind de schets met de grote, opvallende letters YMCA het meest geschikt om di
 
 Ik kan HTML gebruiken om de tekst op de pagina te zetten en CSS om de vormgeving te maken. Met font-size, font-weight, line-height, letter-spacing en transform kan ik spelen met de grootte, ruimte en positie van de tekst. Ook kan ik met kleuren en animaties de vormgeving extra expressief maken.
 
-### retrospect vr 2 okt
+### Voortgang + Retrospect vr 2 okt
 
 ![retrospective](assets/afbeeldingen/IMG_9193.jpg)
 ![retrospective](assets/afbeeldingen/IMG_9194.jpg)
@@ -165,8 +165,6 @@ Een grid geeft structuur, maar je kunt binnen die structuur nog steeds spelen me
 
 Ik neem vooral balans mee. Ik wil verschillende afbeeldingen en teksten gebruiken, maar ze zo verdelen dat mijn website niet te druk of rommelig wordt.
 
-![beschrijving]{link afbeelding}
-
 ### checkout ma 14 sep
 
 1. Leg uit wanneer een website 'lelijk' wordt en geef voorbeelden wat je kan doen om deze 'lelijke' onderdelen te fixen?
@@ -221,7 +219,9 @@ ik heb geen feedback gehad want ik was er niet
 ### workshop wo 9 sep
 
 opdracht 5-10
+
 [Mijn Miro-board](https://miro.com/app/board/uXjVHq1zApo=/?moveToWidget=3458764682999666404&cot=14)
+[crazy8](assets/afbeeldingen/crazy8.jpg)
 
 opdracht 4
 
@@ -409,5 +409,13 @@ Oefening 3 - dialogs animeren stap 1 t/m 2
   <summary>sprint 3</summary>
 
 ### Interessantere layouts
+
+[layouts](https://codepen.io/editor/dewi-schaik/pen/01a17357-dabe-73ed-a7fa-0fe681b9acc2)
+
+### Variabele fonts
+
+oefening 1, 2 en 3
+
+- ik kan de zip bestanden niet openen
 
 </details>
