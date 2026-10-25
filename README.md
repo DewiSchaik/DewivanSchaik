@@ -8,6 +8,12 @@ Het staat model voor digitale tuintjes welke bij 'Het web is voor iedereen' door
 
 [→ Bekijk mijn Figma prototype](https://www.figma.com/proto/L98T9tQbsGSxDZJv4JnHM7/Untitled?node-id=0-1&t=rlDX8zHQZQj9krfK-1)
 
+### Voortgang + Retrospect
+
+feedback gesprek: kleur toevoegen in mn songtext
+
+![songtextkleur](assets/afbeeldingen/songtext%20met%20kleur.png)
+
 ### Dotting the i's wo 14 okt
 
 peerfeedback, annelot, samir en leonie
@@ -221,7 +227,7 @@ ik heb geen feedback gehad want ik was er niet
 opdracht 5-10
 
 [Mijn Miro-board](https://miro.com/app/board/uXjVHq1zApo=/?moveToWidget=3458764682999666404&cot=14)
-[crazy8](assets/afbeeldingen/crazy8.jpg)
+![crazy8](assets/afbeeldingen/crazy8.jpg)
 
 opdracht 4
 
