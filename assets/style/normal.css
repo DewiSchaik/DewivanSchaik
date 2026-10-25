@@ -326,7 +326,12 @@ h2 {
 
   margin-block-end: var(--whitespace-s);
 }
+.heading {
+  font-family: "Staatliches", sans-serif;
 
+  color: var(--header);
+  font-size: var(--step-1);
+}
 h3 {
   font-family: "Staatliches", sans-serif;
 
