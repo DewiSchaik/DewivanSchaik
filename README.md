@@ -8,6 +8,19 @@ Het staat model voor digitale tuintjes welke bij 'Het web is voor iedereen' door
 
 [→ Bekijk mijn Figma prototype](https://www.figma.com/proto/L98T9tQbsGSxDZJv4JnHM7/Untitled?node-id=0-1&t=rlDX8zHQZQj9krfK-1)
 
+### Dotting the i's wo 14 okt
+
+peerfeedback, annelot, samir en leonie
+
+![peerfeedback](assets/afbeeldingen/peerfeedback.jpg)
+![peerfeedback](assets/afbeeldingen/peerfeed.jpg)
+
+### Plan voor afronding ma 12 okt
+
+hoe webby is jou website - samen met Giel
+
+![webby](assets/afbeeldingen/webby.jpg)
+
 ### checkout wo 17 okt
 
 1. Ontwerper: Een grid helpt om onderdelen netjes uit te lijnen. Bezoeker: De website wordt overzichtelijker en makkelijker te lezen.
