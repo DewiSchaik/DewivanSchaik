@@ -78,7 +78,7 @@ Opdracht 2: Bespreek je schetsen met een ander
 
 1. Wat wil je bij de kijker bereiken met je vormgeving?
 
-Ik wil dat de kijker de vrolijke en energieke sfeer van het lied YMCA voelt. Door grote letters, felle kleuren en speelse vormen wil ik de aandacht trekken.
+Ik wil dat de kijker mee krijgt hoe het liedje wordt overgebracht dus nadruk geven op de wat langere uitgesproken letters/woorden zijn
 
 2. Hoe voegt jouw opzet iets toe aan de tekst?
 
@@ -86,7 +86,7 @@ Door af te wisselen met lettergroottes, plaatsing en ruimte ontstaat er ritme in
 
 3. Wat is een volgende stap: welke schets vind je het meest geschikt om digitaal uit te werken?
 
-Ik vind de schets met de grote, opvallende letters YMCA het meest geschikt om digitaal uit te werken. Ik wil de tekst combineren met verschillende lettergroottes, kleuren en speelse vormen.
+Ik vind de schets met de grote, opvallende letters YMCA het meest geschikt om digitaal uit te werken. Ik wil de tekst combineren met verschillende lettergroottes en kleuren.
 
 4. Hoe zou je dit kunnen aanpakken in code?
 
