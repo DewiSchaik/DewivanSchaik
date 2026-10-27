@@ -10,26 +10,31 @@ Het staat model voor digitale tuintjes welke bij 'Het web is voor iedereen' door
 
 - ik heb hulp gehad van een frond-end developer van I-aspect, en met moeilijke interacties of animaties uitleg gegeven
 
-### Voortgang + Retrospect vr
+### Voortgang + Retrospect vr 23 okt
+
+Retrospect 3
+![retrospect](assets/afbeeldingen/IMG_9622.jpg)
+![retrospect](assets/afbeeldingen/IMG_9623.jpg)
+![retrospect](assets/afbeeldingen/IMG_9624.jpg)
 
 feedback gesprek: kleur toevoegen in mn songtext
 
 ![songtextkleur](assets/afbeeldingen/songtext%20met%20kleur.png)
 
-### Dotting the i's wo 14 okt
+### Dotting the i's wo 21 okt
 
 peerfeedback, annelot, samir en leonie
 
 ![peerfeedback](assets/afbeeldingen/peerfeedback.jpg)
 ![peerfeedback](assets/afbeeldingen/peerfeed.jpg)
 
-### Plan voor afronding ma 12 okt
+### Plan voor afronding ma 19 okt
 
 hoe webby is jou website - samen met Giel
 
 ![webby](assets/afbeeldingen/webby.jpg)
 
-### checkout wo 17 okt
+### checkout wo 14 okt
 
 1. Ontwerper: Een grid helpt om onderdelen netjes uit te lijnen. Bezoeker: De website wordt overzichtelijker en makkelijker te lezen.
 
