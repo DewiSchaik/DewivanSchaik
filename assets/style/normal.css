@@ -461,12 +461,11 @@ footer img {
   position: absolute;
   right: 20px;
   bottom: 20px;
-  background-color: var(--titels);
-  color: var(--color);
+  background: none;
+  color: var(--kleur);
   border: none;
-  border-radius: 20px;
-  padding: 10px 20px;
-  font-family: inherit;
+  padding: 0;
+  font-size: 4rem;
   cursor: pointer;
 }
 .cookie-knop:hover {

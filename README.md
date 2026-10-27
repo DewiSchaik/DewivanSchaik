@@ -8,7 +8,9 @@ Het staat model voor digitale tuintjes welke bij 'Het web is voor iedereen' door
 
 [→ Bekijk mijn Figma prototype](https://www.figma.com/proto/L98T9tQbsGSxDZJv4JnHM7/Untitled?node-id=0-1&t=rlDX8zHQZQj9krfK-1)
 
-### Voortgang + Retrospect
+- ik heb hulp gehad van een frond-end developer van I-aspect, en met moeilijke interacties of animaties uitleg gegeven
+
+### Voortgang + Retrospect vr
 
 feedback gesprek: kleur toevoegen in mn songtext
 
